@@ -16,6 +16,10 @@ import { PlayerSimple } from './objects-template/player-simple';
 import { Season } from './objects-template/season';
 import { Stand } from './objects-template/stand';
 import { Stage } from './objects-template/stage';
+import { Stat } from './objects-template/stat';
+import { Team } from './objects-template/team';
+import { TeamSeason } from './objects-template/team-season';
+import { TeamSeasonPlayer } from './objects-template/team-season-player';
 
 @Injectable()
 export class FootballDataService {
@@ -172,6 +176,54 @@ export class FootballDataService {
   public GetStageById(id: number) {
     return this.getAccesKey().flatMap(x => {
       return this.http.get<ApiResponse<Stage[]>>(this.BASE_API_URL + 'stages/' + id + '?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetStandingByStageId(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<Stand[]>>(this.BASE_API_URL + 'stages/' + id + '/standing?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetStatsByMatchId(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<Stat[]>>(this.BASE_API_URL + 'fixtures/' + id + '/stats?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetStatsByTeamSeasonPlayerId(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<Stat[]>>(this.BASE_API_URL + 'teamSeasonPlayers/' + id + '/stats?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetTeamById(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<Team[]>>(this.BASE_API_URL + 'teams/' + id + '?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetTeamSeasonById(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<TeamSeason[]>>(this.BASE_API_URL + 'teamSeasons/' + id + '?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetTeamsSeasonBySeasonId(id: number, page: number = 1) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<TeamSeason[]>>(this.BASE_API_URL + 'seasons/' + id + '/teamSeasons?page=' + page + '&access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetTeamSeasonPlayerById(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<TeamSeasonPlayer[]>>(this.BASE_API_URL + 'teamSeasonPlayers/' + id + '?access_token=' + x.new_access_token);
+    });
+  }
+
+  public GetTeamSeasonPlayersByTeamSeasonId(id: number, page: number = 1) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<TeamSeasonPlayer[]>>(this.BASE_API_URL + 'teamSeasons/' + id + '/teamSeasonPlayers?page=' + page + '&access_token=' + x.new_access_token);
     });
   }
 }
