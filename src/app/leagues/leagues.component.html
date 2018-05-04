@@ -1,0 +1,7 @@
+<mat-tab-group>
+  <mat-tab *ngFor="let country of CountriesWithLeagues" label={{country.countryInfo.name}}>
+    <mat-list>
+        <mat-list-item *ngFor="let league of country.leagues" (click)="LeagueInfo(league)"> {{league.name}} </mat-list-item>
+       </mat-list>       
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,6 @@
+.mat-expansion-panel-header {
+    height: 48px;
+  }
+  .mat-expansion-panel-content:not(.mat-expanded):not(.ng-animating){
+    display: none;
+  }
