@@ -1,0 +1,14 @@
+
+
+.headerImgContainer{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../assets/header.jpg");
+    text-align: center;
+    line-height: 200px;
+	text-shadow: 0px 0px 7px rgba(246, 239, 239, 0.75);
+	color: #092A2A;
+    font-size: 65px;
+    font-family: "Comic Sans MS";
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import {MatTableDataSource} from '@angular/material';
 
 import { FootballDataService } from '../football-data.service';
 
@@ -10,7 +11,10 @@ import { FootballDataService } from '../football-data.service';
   styleUrls: ['./league-details.component.css']
 })
 export class LeagueDetailsComponent implements OnInit {
-  public Teams = [];
+  public dataSource;
+  public displayedColumns = ['position', 'name', 'matchs', 'win', 'draw', 'lose', 'points'];
+  public LeagueName;
+
   constructor(private footballDataService: FootballDataService,
     private route: ActivatedRoute,
     private location: Location) { }
@@ -27,7 +31,8 @@ export class LeagueDetailsComponent implements OnInit {
   private GetTeamsByLeagueId(leagueId: number) {
     this.footballDataService.GetAllSeasonsByLeagueId(leagueId).subscribe(seasons => {
       this.footballDataService.GetAllStagesBySeasonId(seasons.docs[seasons.docs.length - 1]._id).subscribe(teams => {
-        this.Teams = teams.docs[0].standing;
+        this.LeagueName = teams.docs[0].name;
+        this.dataSource = new MatTableDataSource(teams.docs[0].standing);
       });
     });
   }

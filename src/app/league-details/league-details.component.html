@@ -1,3 +1,42 @@
-<mat-list>
-    <mat-list-item *ngFor="let team of Teams"> {{team.position}}. {{team.team_season_name}}   PTS: {{team.pts}} </mat-list-item>
-</mat-list>  
+<h1>
+  {{LeagueName}}</h1>
+<mat-table #table [dataSource]="dataSource">
+
+  <ng-container matColumnDef="position">
+    <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.team_season_name}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="matchs">
+      <mat-header-cell *matHeaderCellDef> Matchs </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.p}} </mat-cell>
+    </ng-container>
+
+  <ng-container matColumnDef="win">
+    <mat-header-cell *matHeaderCellDef> Win </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.w_tot}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="draw">
+    <mat-header-cell *matHeaderCellDef> Draw </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.d_tot}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="lose">
+    <mat-header-cell *matHeaderCellDef> Lose </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.l_tot}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="points">
+    <mat-header-cell *matHeaderCellDef> Points </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.pts}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
