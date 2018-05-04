@@ -15,6 +15,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
+import { LeagueDetailsComponent } from './league-details/league-details.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {MatListModule} from '@angular/material/list';
     NavbarComponent,
     ApiTestComponent,
     LeaguesComponent,
+    LeagueDetailsComponent,
   ],
   imports: [
     BrowserModule,
