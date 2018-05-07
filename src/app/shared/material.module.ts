@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-import {MatToolbarModule} from '@angular/material';
+import { MatExpansionModule, MatIconModule, MatListModule, MatTableModule, MatTabsModule, MatToolbarModule } from '@angular/material';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const materialModules = [
-  MatToolbarModule
+  MatToolbarModule,
+  MatTabsModule,
+  NoopAnimationsModule,
+  MatIconModule,
+  MatExpansionModule,
+  MatListModule,
+  MatTableModule
 ];
 
 @NgModule({
   imports: materialModules,
   exports: materialModules
 })
-export class MaterialModule { }
+export class MaterialModule {
+}
