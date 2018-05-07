@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h1>Logowanie</h1>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <form [formGroup]="loginForm" #form="ngForm">
+      <mat-form-field>
+        <input matInput type="email" placeholder="Email" formControlName="email">
+        <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required')">
+          Proszę podać poprawny adres email
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('email').hasError('required')">
+          Email jest <strong>wymagany</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Hasło" formControlName="password">
+        <mat-error *ngIf="loginForm.get('password').hasError('required')">
+          Hasło jest <strong>wymagane</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid"
+              (click)="login()" class="mt-20">
+        Zaloguj się
+      </button>
+    </form>
+
+    <div fxLayout="row" id="buttons" class="mt-20">
+      <button mat-button fxFlex="50" color="primary">Reset hasła</button>
+      <button mat-button fxFlex="50" color="primary">Zarejestruj się</button>
+    </div>
+
+  </mat-card-content>
+
+
+  <button mat-button fxFlex="50" color="primary" (click)="test()">test</button>
+</mat-card>

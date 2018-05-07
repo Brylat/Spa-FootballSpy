@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FootballDataService } from '../football-data.service';
-import { SimpleCountry } from '../objects-template/simple-country';
-import { League } from '../objects-template/league';
+import { FootballDataService } from '../../shared/football-data.service';
+import { SimpleCountry } from '../../shared/objects-template/simple-country';
+import { League } from '../../shared/objects-template/league';
 
 @Component({
   selector: 'app-leagues',

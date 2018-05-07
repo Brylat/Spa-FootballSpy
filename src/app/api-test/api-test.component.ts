@@ -1,8 +1,8 @@
 import { FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
-import { FootballDataService } from '../football-data.service';
-import { AccessToken } from '../objects-template/access-token';
+import { FootballDataService } from '../shared/football-data.service';
+import { AccessToken } from '../shared/objects-template/access-token';
 
 @Component({
   selector: 'app-api-test',
