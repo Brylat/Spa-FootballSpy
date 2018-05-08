@@ -5,6 +5,10 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { MaterialModule } from '../shared/material.module';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SignupComponent } from './signup/signup.component';
+import { PasswordsFormGroupComponent } from './shared/passwords-form-group/passwords-form-group.component';
+import { AuthComponent } from './auth.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   imports: [
@@ -15,7 +19,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     AuthRoutingModule
   ],
   declarations: [
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
+    PasswordsFormGroupComponent,
+    AuthComponent,
+    ResetPasswordComponent
   ]
 })
 export class AuthModule {

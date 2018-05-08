@@ -6,7 +6,7 @@ export class SnackBarService {
   private _defaultProperties: MatSnackBarConfig = {
     verticalPosition: 'top',
     horizontalPosition: 'end',
-    duration: 2000
+    duration: 5000
   };
   private _defaultWaringProperties: MatSnackBarConfig = {
     duration: 5000,

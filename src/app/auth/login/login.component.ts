@@ -1,36 +1,49 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SnackBarService } from '../../shared/snack-bar.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(private afAuth: AngularFireAuth, private fb: FormBuilder, private sb: SnackBarService) {
+  constructor(
+    private _fb: FormBuilder,
+    private _afAuth: AngularFireAuth,
+    private _sb: SnackBarService,
+    private _router: Router
+  ) {
   }
 
   ngOnInit() {
-    this.loginForm = this.fb.group({
+    this.loginForm = this._fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
-
   }
 
-  login(): void {
-    this.afAuth.auth.signInWithEmailAndPassword(this.loginForm.get('email').value, this.loginForm.get('password').value)
-      .then(() => this.sb.open('Pomyślnie zalogowano'))
-      .catch(() => this.sb.warning());
+  loginWithGoogleAccount() {
+    this._afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+      .then(() => this._loginSuccess());
   }
 
-  test() {
-    this.afAuth.authState.subscribe(d => console.log(d, 'status'));
+  login() {
+    this._afAuth.auth.signInWithEmailAndPassword(this.loginForm.get('email').value, this.loginForm.get('password').value)
+      .then(() => this._loginSuccess())
+      .catch(() => {
+        this._sb.warning();
+      });
+  }
+
+  private _loginSuccess(): void {
+    this._sb.open('Zalogowano');
+    this._router.navigateByUrl('/').then();
   }
 
 }

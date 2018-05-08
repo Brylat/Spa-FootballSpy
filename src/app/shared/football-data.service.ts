@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 import { ApiResponse } from './objects-template/api-response';
 import { AccessToken } from './objects-template/access-token';
@@ -12,7 +11,6 @@ import { Event } from './objects-template/event';
 import { Match } from './objects-template/match';
 import { League } from './objects-template/league';
 import { Player } from './objects-template/player';
-import { PlayerSimple } from './objects-template/player-simple';
 import { Season } from './objects-template/season';
 import { Stand } from './objects-template/stand';
 import { Stage } from './objects-template/stage';

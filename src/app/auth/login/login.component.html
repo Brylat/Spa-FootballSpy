@@ -25,19 +25,22 @@
         </mat-error>
       </mat-form-field>
 
-      <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid"
-              (click)="login()" class="mt-20">
+      <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid" (click)="login()">
         Zaloguj się
       </button>
     </form>
 
-    <div fxLayout="row" id="buttons" class="mt-20">
-      <button mat-button fxFlex="50" color="primary">Reset hasła</button>
-      <button mat-button fxFlex="50" color="primary">Zarejestruj się</button>
+    <button mat-raised-button color="primary" (click)="loginWithGoogleAccount()">
+      Zaloguj się za pomocą konta Google
+    </button>
+
+    <h3 class="text-or">lub</h3>
+
+    <div fxLayout="row" id="buttons">
+      <button mat-button color="primary" routerLink="../reset-password">Reset hasła</button>
+      <button mat-button color="primary" routerLink="../signup">Zarejestruj się</button>
     </div>
 
   </mat-card-content>
 
-
-  <button mat-button fxFlex="50" color="primary" (click)="test()">test</button>
 </mat-card>
