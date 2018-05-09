@@ -14,7 +14,6 @@ import { FootballDataService } from './shared/football-data.service';
 import { MaterialModule } from './shared/material.module';
 import { SnackBarService } from './shared/snack-bar.service';
 import { AfterLoginModule } from './after-login/after-login.module';
-import { AuthService } from './shared/auth/auth.service';
 import { AuthGuard } from './shared/auth/auth.guard';
 
 
