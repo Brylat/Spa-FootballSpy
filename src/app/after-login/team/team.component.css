@@ -1,0 +1,12 @@
+.inf {
+    font-size: 15pt;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+    overflow: auto;
+  }
+  

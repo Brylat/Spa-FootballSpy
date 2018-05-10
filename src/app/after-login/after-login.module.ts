@@ -9,6 +9,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { ApiTestComponent } from '../api-test/api-test.component';
 import { LeagueDetailsComponent } from './league-details/league-details.component';
 import { LeaguesComponent } from './leagues/leagues.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { LeaguesComponent } from './leagues/leagues.component';
     ApiTestComponent,
     LeaguesComponent,
     LeagueDetailsComponent,
+    TeamComponent,
   ]
 })
 export class AfterLoginModule {
