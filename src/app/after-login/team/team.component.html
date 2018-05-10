@@ -1,49 +1,80 @@
-<div *ngIf="teamInfo">
-    <p class="inf">
-        <strong>Team: </strong>{{ teamInfo.team_name }}
-    </p>
-    <p class="inf">
-        <strong>Season: </strong>{{ teamInfo.season_name}}
-    </p>
+<div class="container heading-container">
+    <div class="col">Short info:</div>
+    <div class="col">Detailed info:</div>
 </div>
+<div class="container">
+    <div class="col">
+        <div *ngIf="teamInfo">
+            <p class="inf">
+                <strong>Team: </strong>{{ teamInfo.team_name }}
+                <br>
+                <strong>Season: </strong>{{ teamInfo.season_name}}
+            </p>
+            <p class="inf">
+                Total taken goals {{ teamStats.gf_tot}}
+                <br> Total lost goals {{ teamStats.ga_tot}}
+                <br>
+            </p>
+            <p class="inf">
+                Wins total {{ teamStats.w_tot}}
+                <br> Draws total {{ teamStats.d_tot }}
+                <br> Lost total {{ teamStats.l_tot }}
+            </p>
+            <!-- <p-chart type="pie" [data]="piedata"></p-chart> -->
+        </div>
 
-<mat-accordion>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Team players
-            </mat-panel-title>
-            <mat-panel-description>
-                All people playing in this team
-            </mat-panel-description>
-        </mat-expansion-panel-header>
+    </div>
+    <div class="col">
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Players
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        All players who are playing in this team.
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
 
-        <mat-table [dataSource]="playersInfo">
-            <ng-container matColumnDef="number">
-                <mat-header-cell *matHeaderCellDef> Number </mat-header-cell>
-                <mat-cell *matCellDef="let user"> {{ user.id_player }} </mat-cell>
-            </ng-container>
+                <mat-table [dataSource]="playersInfo">
+                    <ng-container matColumnDef="number">
+                        <mat-header-cell *matHeaderCellDef> Number </mat-header-cell>
+                        <mat-cell *matCellDef="let user"> {{ user.id_player }} </mat-cell>
+                    </ng-container>
 
-            <ng-container matColumnDef="name">
-                <mat-header-cell *matHeaderCellDef> Player name </mat-header-cell>
-                <mat-cell *matCellDef="let user"> {{ user.player_name }} </mat-cell>
-            </ng-container>
+                    <ng-container matColumnDef="name">
+                        <mat-header-cell *matHeaderCellDef> Player name </mat-header-cell>
+                        <mat-cell *matCellDef="let user"> {{ user.player_name }} </mat-cell>
+                    </ng-container>
 
-            <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
-            <mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></mat-row>
-        </mat-table>
-    </mat-expansion-panel>
+                    <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+                    <mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></mat-row>
+                </mat-table>
+            </mat-expansion-panel>
 
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Self aware panel
-            </mat-panel-title>
-            <mat-panel-description>
-                Currently I am {{panelOpenState ? 'open' : 'closed'}}
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-    </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Stats
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Detailed stats of the team.
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                
+            </mat-expansion-panel>
 
-</mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Matches
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        All matches played by this team in season.
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

@@ -1,12 +1,17 @@
 .inf {
     font-size: 15pt;
+    margin-left: 15pt;
 }
 
-.example-container {
-    display: flex;
-    flex-direction: column;
-    max-height: 500px;
-    min-width: 300px;
-    overflow: auto;
-  }
-  
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.heading-container {
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 15pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
