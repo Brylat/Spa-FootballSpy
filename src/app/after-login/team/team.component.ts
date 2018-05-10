@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FootballDataService } from '../../shared/football-data.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatTableDataSource } from '@angular/material';
+import { Stand } from '../../shared/objects-template/stand';
 
 @Component({
   selector: 'app-team',
@@ -11,6 +12,7 @@ import { MatTableDataSource } from '@angular/material';
 export class TeamComponent implements OnInit {
   public teamInfo;
   public playersInfo;
+  public teamStats: Stand;
   columnsToDisplay = ['number', 'name'];
   panelOpenState = false;
 
@@ -30,6 +32,7 @@ export class TeamComponent implements OnInit {
   private GetTeamById(teamId: number) {
     this.footballDataService.GetTeamSeasonById(teamId).subscribe( data => {
       this.teamInfo = data.docs[0];
+      this.GetTeamStats(data.docs[0].id_season, data.docs[0].id_team);
     });
   }
 
@@ -39,4 +42,9 @@ export class TeamComponent implements OnInit {
     });
   }
 
+  private GetTeamStats(seasonId: number, teamId: number) {
+    this.footballDataService.GetAllStagesBySeasonId(seasonId).subscribe(data => {
+      this.teamStats = data.docs[0].standing.filter(x => x.id_team_season === teamId)[0];
+    });
+  }
 }
