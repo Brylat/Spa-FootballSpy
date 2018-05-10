@@ -15,6 +15,7 @@ import { MaterialModule } from './shared/material.module';
 import { SnackBarService } from './shared/snack-bar.service';
 import { AfterLoginModule } from './after-login/after-login.module';
 import { AuthGuard } from './shared/auth/auth.guard';
+import { FirebaseService } from './shared/firebase.service';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { AuthGuard } from './shared/auth/auth.guard';
   providers: [
     FootballDataService,
     SnackBarService,
-    AuthGuard
+    AuthGuard,
+    FirebaseService
   ],
   bootstrap: [AppComponent]
 })
