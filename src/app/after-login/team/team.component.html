@@ -1,9 +1,12 @@
-<p class="inf">
-    <strong>Team: </strong>{{ teamInfo.team_name }}
-</p>
-<p class="inf">
-    <strong>Season: </strong>{{ teamInfo.season_name}}
-</p>
+<div *ngIf="teamInfo">
+    <p class="inf">
+        <strong>Team: </strong>{{ teamInfo.team_name }}
+    </p>
+    <p class="inf">
+        <strong>Season: </strong>{{ teamInfo.season_name}}
+    </p>
+</div>
+
 <mat-accordion>
     <mat-expansion-panel>
         <mat-expansion-panel-header>
