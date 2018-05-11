@@ -25,7 +25,7 @@ export class LeagueDetailsComponent implements OnInit {
   }
 
   public ClickedRow(row) {
-    this.router.navigate(['/team/' + row._id]);
+    this.router.navigate(['/team/' + row.id_team_season]);
   }
 
   private GetLeagueInfo(): void {
