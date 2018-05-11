@@ -37,7 +37,7 @@ export class TeamComponent implements OnInit {
   private GetTeamById(teamId: number) {
     this.footballDataService.GetTeamSeasonById(teamId).subscribe(data => {
       this.teamInfo = data.docs[0];
-      this.GetTeamStats(data.docs[0].id_season, data.docs[0].id_team);
+      this.GetTeamStats(data.docs[0].id_season, data.docs[0]._id);
     });
   }
 

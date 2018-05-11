@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { MatTableDataSource } from '@angular/material';
 
@@ -17,10 +17,15 @@ export class LeagueDetailsComponent implements OnInit {
 
   constructor(private footballDataService: FootballDataService,
     private route: ActivatedRoute,
-    private location: Location) { }
+    private location: Location,
+    private router: Router) { }
 
   ngOnInit() {
     this.GetLeagueInfo();
+  }
+
+  public ClickedRow(row) {
+    this.router.navigate(['/team/' + row._id]);
   }
 
   private GetLeagueInfo(): void {
