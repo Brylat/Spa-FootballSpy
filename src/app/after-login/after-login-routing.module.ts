@@ -14,7 +14,7 @@ const routes: Routes = [
     path: '', component: AfterLoginComponent, canActivate: [AuthGuard], children: [
       { path: 'leagues', component: LeaguesComponent },
       { path: 'league/:id', component: LeagueDetailsComponent },
-      { path: 'team/:teamId', component: TeamComponent }
+      { path: 'team/:teamId', component: TeamComponent },
       { path: 'league/:id', component: LeagueDetailsComponent },
       { path: 'teamcompare', component: TeamCompareComponent },
       { path: '', component: DashboardComponent }
