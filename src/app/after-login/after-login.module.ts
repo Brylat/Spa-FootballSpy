@@ -10,6 +10,7 @@ import { ApiTestComponent } from '../api-test/api-test.component';
 import { LeagueDetailsComponent } from './league-details/league-details.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TeamCompareComponent } from './team-compare/team-compare.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LeaguesComponent,
     LeagueDetailsComponent,
     DashboardComponent,
+    TeamCompareComponent,
   ]
 })
 export class AfterLoginModule {

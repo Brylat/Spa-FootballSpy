@@ -11,7 +11,8 @@ import {
   MatSnackBarModule,
   MatTableModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatSelectModule
 } from '@angular/material';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -28,7 +29,8 @@ const materialModules = [
   MatFormFieldModule,
   MatButtonModule,
   MatCardModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatSelectModule
 ];
 
 @NgModule({

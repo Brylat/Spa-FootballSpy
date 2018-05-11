@@ -1,0 +1,79 @@
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+<div id="forms">
+
+  <div class="country">
+    <mat-form-field>
+      <mat-select placeholder="Choose country" [formControl]="Countries1" (ngModelChange)="ChangeSelectedCountry1($event)">
+        <mat-option *ngFor="let country of AllCountries" [value]="country">
+          {{ country.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select placeholder="Choose league" [formControl]="League1" (ngModelChange)="ChangeSelectedLeague1($event)">
+        <mat-option *ngFor="let league of Leagues1" [value]="league">
+          {{league.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select placeholder="Choose Team" [formControl]="Team1" (ngModelChange)="ChangeSelectedTeam1($event)">
+        <mat-option *ngFor="let team of Teams1" [value]="team">
+          {{team.team_season_name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+  </div>
+
+  <div class="country">
+    <mat-form-field>
+      <mat-select placeholder="Choose country" [formControl]="Countries2" (ngModelChange)="ChangeSelectedCountry2($event)">
+        <mat-option *ngFor="let country of AllCountries" [value]="country">
+          {{ country.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select placeholder="Choose league" [formControl]="League2" (ngModelChange)="ChangeSelectedLeague2($event)">
+        <mat-option *ngFor="let league of Leagues2" [value]="league">
+          {{league.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select placeholder="Choose Team" [formControl]="Team2" (ngModelChange)="ChangeSelectedTeam2($event)">
+        <mat-option *ngFor="let team of Teams2" [value]="team">
+          {{team.team_season_name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class=cb></div>
+</div>
+  <hr>
+  <div class="match" *ngFor="let match of MatchHistory">
+    <div class="squere">
+        <b>Gospodarz:</b> {{ match.team_season_home_name }}
+      <br><br><b>Gole:</b> {{ match.number_goal_team_home }}
+    </div>
+    <div class="squere">
+        <b>Data</b>: {{ match.schedule_date | date:'fullDate'}}
+      <br><b>Stadion:</b> {{ match.stadium }}
+      <br><b>Ilość widzow:</b> {{ match.spectators }}
+      <br><b>Sędzia:</b> {{ match.referee_name }}
+      <br><b>Rozpoczęcie:</b> {{ match.game_started_at | date:'shortTime'}}
+      <br><b>Zakończenie:</b> {{ match.game_ended_at | date:'shortTime'}}
+    </div>
+    <div class="squere">
+        <b>Gość:</b> {{ match.team_season_away_name }}
+      <br><br><b>Gole:</b> {{ match.number_goal_team_away }}
+    </div>
+    <div class=cb></div>
+    <hr>
+  </div>
+
