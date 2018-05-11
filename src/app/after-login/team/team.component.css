@@ -1,0 +1,17 @@
+.inf {
+    font-size: 15pt;
+    margin-left: 15pt;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.heading-container {
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 15pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}

@@ -1,0 +1,99 @@
+<div class="container heading-container">
+    <div class="col">Short info:</div>
+    <div class="col">Detailed info:</div>
+</div>
+<div class="container">
+    <div class="col">
+        <div *ngIf="teamInfo">
+            <p class="inf">
+                <strong>Team: </strong>{{ teamInfo.team_name }}
+                <br>
+                <strong>Season: </strong>{{ teamInfo.season_name}}
+            </p>
+            <div>
+                <canvas id="canvas">{{ chart }}</canvas>
+            </div>
+        </div>
+
+    </div>
+    <div class="col">
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Players
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        All players who are playing in this team.
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <mat-table [dataSource]="playersInfo">
+                    <ng-container matColumnDef="number">
+                        <mat-header-cell *matHeaderCellDef> Number </mat-header-cell>
+                        <mat-cell *matCellDef="let user"> {{ user.id_player }} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="name">
+                        <mat-header-cell *matHeaderCellDef> Player name </mat-header-cell>
+                        <mat-cell *matCellDef="let user"> {{ user.player_name }} </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+                    <mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></mat-row>
+                </mat-table>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Short stats
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Short stats of the team.
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Wins total {{ teamStats.w_tot}}</p>
+                <p>Draws total {{ teamStats.d_tot }}</p>
+                <p>Lost total {{ teamStats.l_tot }}</p>
+                <p>Total taken goals {{ teamStats.gf_tot}}</p>
+                <p>Total lost goals {{ teamStats.ga_tot}}</p>
+                <p>Total points {{teamStats.pts}}</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Detailed stats
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Detailed stats of the team.
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-card>
+                    <mat-card-content>
+                        <mat-tab-group class="demo-tab-group">
+                            <mat-tab label="Stats home">
+                                <div class="demo-tab-content">
+                                    <p> Wins {{teamStats.w_home}}</p>
+                                    <p> Draws {{teamStats.d_home}}</p>
+                                    <p> Loses {{teamStats.l_home}}</p>
+                                    <p> Goals taken {{teamStats.gf_home}}</p>
+                                    <p> Goals taken {{teamStats.ga_home}}</p>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Stats away">
+                                <div class="demo-tab-content">
+                                    <p> Wins {{teamStats.w_away}}</p>
+                                    <p> Draws {{teamStats.d_away}}</p>
+                                    <p> Loses {{teamStats.l_away}}</p>
+                                    <p> Goals taken {{teamStats.gf_away}}</p>
+                                    <p> Goals taken {{teamStats.ga_away}}</p>
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </mat-card-content>
+                </mat-card>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

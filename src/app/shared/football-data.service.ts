@@ -189,6 +189,12 @@ export class FootballDataService {
     });
   }
 
+  public GetStatsByTeamSeasonId(id: number) {
+    return this.getAccesKey().flatMap(x => {
+      return this.http.get<ApiResponse<Stat[]>>(this.BASE_API_URL + 'teamSeasons/' + id + '/stats?access_token=' + x.new_access_token);
+    });
+  }
+
   public GetStatsByTeamSeasonPlayerId(id: number) {
     return this.getAccesKey().flatMap(x => {
       return this.http.get<ApiResponse<Stat[]>>(this.BASE_API_URL + 'teamSeasonPlayers/' + id + '/stats?access_token=' + x.new_access_token);

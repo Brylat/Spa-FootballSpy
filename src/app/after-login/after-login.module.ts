@@ -9,6 +9,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { ApiTestComponent } from '../api-test/api-test.component';
 import { LeagueDetailsComponent } from './league-details/league-details.component';
 import { LeaguesComponent } from './leagues/leagues.component';
+import { TeamComponent } from './team/team.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeamCompareComponent } from './team-compare/team-compare.component';
 
@@ -27,6 +28,7 @@ import { TeamCompareComponent } from './team-compare/team-compare.component';
     ApiTestComponent,
     LeaguesComponent,
     LeagueDetailsComponent,
+    TeamComponent,
     DashboardComponent,
     TeamCompareComponent,
   ]

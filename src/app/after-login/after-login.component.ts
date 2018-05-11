@@ -10,7 +10,6 @@ export class AfterLoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('dupa');
   }
 
 }
