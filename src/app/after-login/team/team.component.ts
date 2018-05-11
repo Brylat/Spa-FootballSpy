@@ -17,6 +17,7 @@ export class TeamComponent implements OnInit {
   public playersInfo;
   public teamStats: Stand;
   columnsToDisplay = ['number', 'name'];
+  columnsToDisplay2 = ['home', 'away'];
   panelOpenState = false;
   chart: Chart;
 
@@ -55,8 +56,9 @@ export class TeamComponent implements OnInit {
         data: {
           labels: ['Wins', 'Draws', 'Loses'],
           datasets: [{
-            data: [this.teamStats.w_tot, this.teamStats.d_tot, this.teamStats.l_tot]
-          }]
+            data: [this.teamStats.w_tot, this.teamStats.d_tot, this.teamStats.l_tot],
+            backgroundColor: ['#00ff00', '#ff0000', '#ffff00']
+          }],
         }
       });
     });
