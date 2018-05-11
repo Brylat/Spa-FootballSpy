@@ -3,7 +3,7 @@ import { FootballDataService } from '../../shared/football-data.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatTableDataSource } from '@angular/material';
 import { Stand } from '../../shared/objects-template/stand';
-import { ChartModule } from 'primeng/primeng';
+import { Chart } from 'chart.js';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class TeamComponent implements OnInit {
   public teamStats: Stand;
   columnsToDisplay = ['number', 'name'];
   panelOpenState = false;
-  piedata: any;
+  chart: Chart;
 
   constructor(private footballDataService: FootballDataService,
     private route: ActivatedRoute) { }
@@ -49,27 +49,17 @@ export class TeamComponent implements OnInit {
   private GetTeamStats(seasonId: number, teamId: number) {
     this.footballDataService.GetAllStagesBySeasonId(seasonId).subscribe(data => {
       this.teamStats = data.docs[0].standing.filter(x => x.id_team_season === teamId)[0];
-      // this.makeChart();
+
+      this.chart = new Chart('canvas', {
+        type: 'doughnut',
+        data: {
+          labels: ['Wins', 'Draws', 'Loses'],
+          datasets: [{
+            data: [this.teamStats.w_tot, this.teamStats.d_tot, this.teamStats.l_tot]
+          }]
+        }
+      });
     });
   }
 
-  // private makeChart(){
-  //   this.piedata = {
-  //     labels: ['Wins', 'Draws', 'Loses'],
-  //     datasets: [
-  //         {
-  //             piedata: [this.teamStats.w_tot, this.teamStats.d_tot, this.teamStats.l_tot],
-  //             backgroundColor: [
-  //                 '#FF6384',
-  //                 '#36A2EB',
-  //                 '#FFCE56'
-  //             ],
-  //             hoverBackgroundColor: [
-  //                 '#FF6384',
-  //                 '#36A2EB',
-  //                 '#FFCE56'
-  //             ]
-  //         }]
-  //     };
-  // }
 }
