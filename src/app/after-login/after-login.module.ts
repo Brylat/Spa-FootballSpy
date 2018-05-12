@@ -13,6 +13,7 @@ import { TeamComponent } from './team/team.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeamCompareComponent } from './team-compare/team-compare.component';
 import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.component';
+import { MatchesInDateComponent } from './matches-in-date/matches-in-date.component';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.co
     DashboardComponent,
     TeamCompareComponent,
     UpcomingMatchesComponent,
+    MatchesInDateComponent,
   ]
 })
 export class AfterLoginModule {

@@ -12,7 +12,9 @@ import {
   MatTableModule,
   MatTabsModule,
   MatToolbarModule,
-  MatSelectModule
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 } from '@angular/material';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -30,7 +32,9 @@ const materialModules = [
   MatButtonModule,
   MatCardModule,
   MatSnackBarModule,
-  MatSelectModule
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];
 
 @NgModule({
