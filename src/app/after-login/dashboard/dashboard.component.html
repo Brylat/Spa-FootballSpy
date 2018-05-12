@@ -2,7 +2,7 @@
 <h2>Your observe Teams:</h2>
 
 <div class="singleLine" *ngFor="let team of ObserveTeams" routerLink="/team/{{team._id}}">
-    {{team.team_name}}
+    {{team.data.team_name}}
     <button mat-button color="warn" (click)="DeleteTeam($event, team)">Del</button>
 </div>
 

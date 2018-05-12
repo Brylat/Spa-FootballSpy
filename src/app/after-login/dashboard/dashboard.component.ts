@@ -20,13 +20,13 @@ export class DashboardComponent implements OnInit {
   }
 
   public DeleteLeague(event, league) {
-    this.firebaseService.deleteLeague(league.leagueId);
+    this.firebaseService.deleteLeague(league.league.key);
     this.ObserveLeagues = this.ObserveLeagues.filter(x => x.leagueId !== league.leagueId);
     event.stopPropagation();
   }
 
   public DeleteTeam(event, team) {
-    this.firebaseService.deleteTeam(team._id);
+    this.firebaseService.deleteTeam(team.team.key);
     this.ObserveTeams = this.ObserveTeams.filter(x => x._id !== team._id);
     event.stopPropagation();
   }
@@ -34,19 +34,21 @@ export class DashboardComponent implements OnInit {
   private GetData() {
     this.firebaseService.getTeams().subscribe(teams => {
       teams.forEach(team => {
-        this.footballDataService.GetTeamSeasonById(team).subscribe(data => {
-          this.ObserveTeams.push(data.docs[0]);
+        this.footballDataService.GetTeamSeasonById(team.value).subscribe(data => {
+          this.ObserveTeams.push({
+            data: data.docs[0],
+            team: team});
         });
       });
     });
 
     this.firebaseService.getLeagues().subscribe(leagues => {
       leagues.forEach(league => {
-        this.footballDataService.GetAllSeasonsByLeagueId(league).subscribe(seasons => {
+        this.footballDataService.GetAllSeasonsByLeagueId(league.value).subscribe(seasons => {
           this.footballDataService.GetAllStagesBySeasonId(seasons.docs[seasons.docs.length - 1]._id).subscribe(data => {
             this.ObserveLeagues.push({
               data: data.docs[0],
-              leagueId: league});
+              league: league});
           });
         });
       });
