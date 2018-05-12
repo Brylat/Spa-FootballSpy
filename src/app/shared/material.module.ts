@@ -14,7 +14,9 @@ import {
   MatToolbarModule,
   MatSelectModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatProgressBarModule,
+  MatPaginatorModule
 } from '@angular/material';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -34,7 +36,9 @@ const materialModules = [
   MatSnackBarModule,
   MatSelectModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatProgressBarModule,
+  MatPaginatorModule
 ];
 
 @NgModule({
