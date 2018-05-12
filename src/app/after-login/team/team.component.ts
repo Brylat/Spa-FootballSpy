@@ -32,7 +32,7 @@ export class TeamComponent implements OnInit {
   }
 
   public AddTeam() {
-    this.firebaseService.AddTeamId(this.TeamId);
+    this.firebaseService.addTeam(this.TeamId);
   }
   private GetTeamInfo(): void {
     this.TeamId = +this.route.snapshot.paramMap.get('teamId');

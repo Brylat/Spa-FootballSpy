@@ -1,33 +1,64 @@
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs/observable/of';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireList, SnapshotAction } from 'angularfire2/database/interfaces';
 
 @Injectable()
 export class FirebaseService {
+  private _teamsRef: AngularFireList;
+  private _leagueRef: AngularFireList;
 
-  constructor() { }
-
-  public AddTeamId(id: number): void {
-    alert(id);
+  constructor(private _afAuth: AngularFireAuth, private _db: AngularFireDatabase) {
+    this._afAuth.authState.subscribe(user => {
+      if (user) {
+        this._leagueRef = this._db.list('users/' + user.uid + '/leagues');
+        this._teamsRef = this._db.list('users/' + user.uid + '/teams');
+      }
+    });
   }
 
-  public AddLeagueId(id: number): void {
-    alert(id);
+  public addTeam(id: number): void {
+    this.getTeams().subscribe((arr: any[]) => {
+      if (!arr.find(el => el.value.toString() === id.toString())) {
+        this._teamsRef.push(id);
+      }
+    });
   }
 
-  public DeleteTeamId(id: number): void {
-    alert(id);
+  public addLeague(id: number): void {
+    this.getLeagues().subscribe((arr: any[]) => {
+      if (!arr.find(el => el.value.toString() === id.toString())) {
+        this._leagueRef.push(id);
+      }
+    });
   }
 
-  public DeleteLeagueId(id: number): void {
-    alert(id);
+  public deleteTeam(id: string): void {
+    this._teamsRef.remove(id);
   }
 
-  public GetTeamsId() {
-    return of([1, 2]);
+  public deleteLeague(id: string): void {
+    this._leagueRef.remove(id);
   }
 
-  public GetLeaguesId() {
-    return of([123, 12]);
+  public getTeams() {
+    return this.getDate(this._teamsRef);
+  }
+
+  public getLeagues() {
+    return this.getDate(this._leagueRef);
+  }
+
+  private getDate(ref: AngularFireList) {
+    return ref.snapshotChanges().first()
+      .map((arr: SnapshotAction[]) => {
+        return arr.map(el => {
+          return {
+            key: el.payload.key,
+            value: el.payload.val()
+          };
+        });
+      });
   }
 
 }

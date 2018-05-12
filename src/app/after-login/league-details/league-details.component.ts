@@ -28,7 +28,7 @@ export class LeagueDetailsComponent implements OnInit {
   }
 
   public AddLeague() {
-    this.firebaseService.AddLeagueId(this.LeagueId);
+    this.firebaseService.addLeague(this.LeagueId);
   }
 
   public ClickedRow(row) {
