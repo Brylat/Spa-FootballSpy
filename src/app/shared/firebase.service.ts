@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs/observable/of';
 
 @Injectable()
 export class FirebaseService {
@@ -21,12 +22,12 @@ export class FirebaseService {
 
   }
 
-  public GetTeamsId(): number[] {
-    return [];
+  public GetTeamsId() {
+    return of([]);
   }
 
-  public GetLeaguesId(): number[] {
-    return [];
+  public GetLeaguesId() {
+    return of([]);
   }
 
 }
