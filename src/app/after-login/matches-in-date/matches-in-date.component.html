@@ -1,17 +1,19 @@
 <div class="hd">
-    <mat-card id="forms">Enter data to search matches in these data<br><br>
-  
-  <mat-form-field>
-    <input matInput [matDatepicker]="dateFrom" placeholder="Select date from" (dateInput)="changeDateFrom($event)">
-    <mat-datepicker-toggle matSuffix [for]="dateFrom"></mat-datepicker-toggle>
-    <mat-datepicker #dateFrom></mat-datepicker>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [matDatepicker]="dateTo" placeholder="Select date to" (dateInput)="changeDateTo($event)">
-    <mat-datepicker-toggle matSuffix [for]="dateTo"></mat-datepicker-toggle>
-    <mat-datepicker #dateTo></mat-datepicker>
-  </mat-form-field>
-</mat-card>
+  <mat-card id="forms">Enter data to search matches in these data
+    <br>
+    <br>
+
+    <mat-form-field>
+      <input matInput [matDatepickerFilter]="myFilter2" [matDatepicker]="dateFrom" placeholder="Select date from" (dateInput)="changeDateFrom($event, 1)">
+      <mat-datepicker-toggle matSuffix [for]="dateFrom"></mat-datepicker-toggle>
+      <mat-datepicker #dateFrom></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="dateTo" placeholder="Select date to" (dateInput)="changeDateTo($event, 1)">
+      <mat-datepicker-toggle matSuffix [for]="dateTo"></mat-datepicker-toggle>
+      <mat-datepicker #dateTo></mat-datepicker>
+    </mat-form-field>
+  </mat-card>
 </div>
 
 
@@ -39,3 +41,6 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
   </mat-table>
+  <mat-paginator #paginator [length]='pages' [pageSize]="30" [showFirstLastButtons]="true" (page)="ChangePage($event)">
+  </mat-paginator>
+</div>
