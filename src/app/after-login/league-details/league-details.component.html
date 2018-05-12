@@ -1,3 +1,4 @@
+<div id="league">
 <h1>
   {{LeagueName}}<button mat-mini-fab color="primary" (click)="AddLeague()">+</button></h1>
 <mat-table #table [dataSource]="dataSource">
@@ -40,3 +41,4 @@
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="ClickedRow(row)"></mat-row>
 </mat-table>
+</div>
