@@ -18,7 +18,6 @@ import { TeamCompareComponent } from './team-compare/team-compare.component';
     CommonModule,
     ReactiveFormsModule,
     MaterialModule,
-
     AfterLoginRoutingModule,
   ],
   declarations: [

@@ -1,3 +1,27 @@
-<p>
-  dashboard works!
-</p>
+<div class="man">
+    <h3>
+        Welcome to FootballSpy website! This is free project made by students from Economics University in Kraków. Main feature of
+        this single page application is communication with SportDeer.com API through REST calls.
+    </h3>
+    <h5>
+        We highly recommend to sign up and log into our website to make you see whole funcationality of site.
+    </h5>
+</div>
+<hr/>
+<h3>
+    Today is {{ today | date }} and are playing
+</h3>
+<mat-table [dataSource]="matchInfo">
+    <!-- <ng-container matColumnDef="number">
+            <mat-header-cell *matHeaderCellDef> Number </mat-header-cell>
+            <mat-cell *matCellDef="let user"> {{ user.id_player }} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef> Player name </mat-header-cell>
+            <mat-cell *matCellDef="let user"> {{ user.player_name }} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+        <mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></mat-row> -->
+</mat-table>
