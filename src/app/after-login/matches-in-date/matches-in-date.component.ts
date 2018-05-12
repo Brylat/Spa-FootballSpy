@@ -37,7 +37,7 @@ export class MatchesInDateComponent implements OnInit {
   }
 
   private ChangePage(event: any) {
-    this.GetMatchesByDatePaginator(event.pageIndex);
+    this.GetMatchesByDatePaginator(event.pageIndex + 1);
   }
 
   private GetMatchesByDatePaginator(page: number) {
