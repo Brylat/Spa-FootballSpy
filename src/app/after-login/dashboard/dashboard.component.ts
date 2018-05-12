@@ -8,23 +8,13 @@ import { FootballDataService } from '../../shared/football-data.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  today = Date.now();
-  columnsToDisplay = ['number', 'name'];
-  public matchInfo;
+
 
   constructor(private firebaseService: FirebaseService,
     private footballDataService: FootballDataService) { }
 
 
   ngOnInit() {
-    this.getMatchInfo();
   }
-
-  private getMatchInfo(){
-    this.footballDataService.GetUpcomingByDate(, this.today).subscribe(data => {
-      // this.playersInfo = new MatTableDataSource(data.docs);
-    });
-  }
-
 
 }
