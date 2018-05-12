@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeamCompareComponent } from './team-compare/team-compare.component';
 import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.component';
 import { MatchesInDateComponent } from './matches-in-date/matches-in-date.component';
+import { UpcomingSiteComponent } from './upcoming-site/upcoming-site.component';
 
 const routes: Routes = [
   {
@@ -19,8 +20,7 @@ const routes: Routes = [
       { path: 'team/:teamId', component: TeamComponent },
       { path: 'league/:id', component: LeagueDetailsComponent },
       { path: 'teamcompare', component: TeamCompareComponent },
-      { path: 'upcoming', component: UpcomingMatchesComponent },
-      { path: 'byDate', component: MatchesInDateComponent },
+      { path: 'upcoming', component: UpcomingSiteComponent },
       { path: '', component: DashboardComponent }
     ]
   }

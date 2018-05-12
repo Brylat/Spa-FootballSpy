@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeamCompareComponent } from './team-compare/team-compare.component';
 import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.component';
 import { MatchesInDateComponent } from './matches-in-date/matches-in-date.component';
+import { UpcomingSiteComponent } from './upcoming-site/upcoming-site.component';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { MatchesInDateComponent } from './matches-in-date/matches-in-date.compon
     TeamCompareComponent,
     UpcomingMatchesComponent,
     MatchesInDateComponent,
+    UpcomingSiteComponent,
   ]
 })
 export class AfterLoginModule {

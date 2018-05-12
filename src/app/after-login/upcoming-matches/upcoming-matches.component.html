@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
 
-  <mat-card id="forms">Searching upcoming matches by league...<br><br>
+  <mat-card id="forms">Searching upcoming matches by league<br><br>
     <mat-form-field>
         <mat-select placeholder="Choose country" [formControl]="Countries" (ngModelChange)="ChangeSelectedCountry($event)">
           <mat-option *ngFor="let country of AllCountries" [value]="country">

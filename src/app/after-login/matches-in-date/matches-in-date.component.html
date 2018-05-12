@@ -1,5 +1,6 @@
 <div class="hd">
-  <h4>Enter data to search matches in these data:</h4>
+    <mat-card id="forms">Enter data to search matches in these data<br><br>
+  
   <mat-form-field>
     <input matInput [matDatepicker]="dateFrom" placeholder="Select date from" (dateInput)="changeDateFrom($event)">
     <mat-datepicker-toggle matSuffix [for]="dateFrom"></mat-datepicker-toggle>
@@ -10,6 +11,7 @@
     <mat-datepicker-toggle matSuffix [for]="dateTo"></mat-datepicker-toggle>
     <mat-datepicker #dateTo></mat-datepicker>
   </mat-form-field>
+</mat-card>
 </div>
 
 
