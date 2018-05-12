@@ -1,0 +1,36 @@
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+
+<div id="forms">
+
+    <mat-form-field>
+        <mat-select placeholder="Choose country" [formControl]="Countries" (ngModelChange)="ChangeSelectedCountry($event)">
+          <mat-option *ngFor="let country of AllCountries" [value]="country">
+            {{ country.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-select placeholder="Choose league" [formControl]="League" (ngModelChange)="ChangeSelectedLeague($event)">
+          <mat-option *ngFor="let league of Leagues" [value]="league">
+            {{league.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+</div>
+<div id="results">
+    <hr>
+    <div class="match" *ngFor="let match of Matches">
+      <div class="fl">
+        <b>Gospodarz:</b> {{ match.team_season_home_name }}
+        <br><b>Gość:</b> {{ match.team_season_away_name }}
+      </div>
+      <div class="fl">
+        <b>Data</b>: {{ match.schedule_date | date:'medium'}}
+        <br><b>Stadion:</b> {{ match.stadium }}
+      </div>
+      <div class="cb"></div>
+      <hr>
+    </div>
+</div>

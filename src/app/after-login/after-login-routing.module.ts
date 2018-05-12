@@ -8,6 +8,7 @@ import { LeagueDetailsComponent } from './league-details/league-details.componen
 import { TeamComponent } from './team/team.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeamCompareComponent } from './team-compare/team-compare.component';
+import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'team/:teamId', component: TeamComponent },
       { path: 'league/:id', component: LeagueDetailsComponent },
       { path: 'teamcompare', component: TeamCompareComponent },
+      { path: 'upcoming', component: UpcomingMatchesComponent },
       { path: '', component: DashboardComponent }
     ]
   }
