@@ -4,7 +4,7 @@
     <br>
 
     <mat-form-field>
-      <input matInput [matDatepicker]="dateFrom" placeholder="Select date from" (dateInput)="changeDateFrom($event, 1)">
+      <input matInput [matDatepickerFilter]="myFilter2" [matDatepicker]="dateFrom" placeholder="Select date from" (dateInput)="changeDateFrom($event, 1)">
       <mat-datepicker-toggle matSuffix [for]="dateFrom"></mat-datepicker-toggle>
       <mat-datepicker #dateFrom></mat-datepicker>
     </mat-form-field>

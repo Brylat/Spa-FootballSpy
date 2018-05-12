@@ -7,6 +7,7 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
   templateUrl: './matches-in-date.component.html',
   styleUrls: ['./matches-in-date.component.css']
 })
+
 export class MatchesInDateComponent implements OnInit {
   events: string[];
   public dataSource;
@@ -14,13 +15,19 @@ export class MatchesInDateComponent implements OnInit {
   dateFrom: Date;
   dateTo: Date;
   pages: any;
+  today = new Date;
 
   constructor(private footballDataService: FootballDataService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   myFilter = (d: Date): boolean => {
-    return d > this.dateFrom;
+    return d >= this.dateFrom;
+  }
+
+  myFilter2 = (d: Date): boolean => {
+    return d >= this.today;
   }
 
   private changeDateFrom(event: MatDatepickerInputEvent<Date>) {
@@ -34,7 +41,7 @@ export class MatchesInDateComponent implements OnInit {
   }
 
   private GetMatchesByDate() {
-    this.footballDataService.GetUpcomingByDate(this.dateFrom, this.dateTo, 1).subscribe( data => {
+    this.footballDataService.GetUpcomingByDate(this.dateFrom, this.dateTo, 1).subscribe(data => {
       this.dataSource = data.docs;
       this.pages = data.pagination.total;
     });
@@ -45,7 +52,7 @@ export class MatchesInDateComponent implements OnInit {
   }
 
   private GetMatchesByDatePaginator(page: number) {
-    this.footballDataService.GetUpcomingByDate(this.dateFrom, this.dateTo, page).subscribe( data => {
+    this.footballDataService.GetUpcomingByDate(this.dateFrom, this.dateTo, page).subscribe(data => {
       this.dataSource = data.docs;
     });
   }
