@@ -19,6 +19,10 @@ export class MatchesInDateComponent implements OnInit {
 
   ngOnInit() {}
 
+  myFilter = (d: Date): boolean => {
+    return d > this.dateFrom;
+  }
+
   private changeDateFrom(event: MatDatepickerInputEvent<Date>) {
     this.dateFrom = event.value;
     this.GetMatchesByDate();
