@@ -1,5 +1,5 @@
 <h1>
-  {{LeagueName}}</h1>
+  {{LeagueName}}<button mat-mini-fab color="primary" (click)="AddLeague()">+</button></h1>
 <mat-table #table [dataSource]="dataSource">
 
   <ng-container matColumnDef="position">
