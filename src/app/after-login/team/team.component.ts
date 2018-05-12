@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { MatTableDataSource } from '@angular/material';
 import { Stand } from '../../shared/objects-template/stand';
 import { Chart } from 'chart.js';
+import { FirebaseService } from '../../shared/firebase.service';
 
 
 @Component({
@@ -16,22 +17,27 @@ export class TeamComponent implements OnInit {
   public teamInfo;
   public playersInfo;
   public teamStats: Stand;
+  private TeamId;
   columnsToDisplay = ['number', 'name'];
   columnsToDisplay2 = ['home', 'away'];
   panelOpenState = false;
   chart: Chart;
 
   constructor(private footballDataService: FootballDataService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private firebaseService: FirebaseService) { }
 
   ngOnInit() {
     this.GetTeamInfo();
   }
 
+  public AddTeam() {
+    this.firebaseService.AddTeamId(this.TeamId);
+  }
   private GetTeamInfo(): void {
-    const teamId = +this.route.snapshot.paramMap.get('teamId');
-    this.GetTeamById(teamId);
-    this.GetPlayersById(teamId);
+    this.TeamId = +this.route.snapshot.paramMap.get('teamId');
+    this.GetTeamById(this.TeamId);
+    this.GetPlayersById(this.TeamId);
   }
 
   private GetTeamById(teamId: number) {

@@ -1,0 +1,18 @@
+.singleLine{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.singleLine:hover{
+    padding-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button{
+    visibility: hidden;
+}
+
+.singleLine:hover button {
+    visibility: visible;
+}

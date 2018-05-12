@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { MatTableDataSource } from '@angular/material';
 
 import { FootballDataService } from '../../shared/football-data.service';
+import { FirebaseService } from '../../shared/firebase.service';
 
 @Component({
   selector: 'app-league-details',
@@ -14,14 +15,20 @@ export class LeagueDetailsComponent implements OnInit {
   public dataSource;
   public displayedColumns = ['position', 'name', 'matchs', 'win', 'draw', 'lose', 'points'];
   public LeagueName;
+  private LeagueId;
 
   constructor(private footballDataService: FootballDataService,
     private route: ActivatedRoute,
     private location: Location,
-    private router: Router) { }
+    private router: Router,
+    private firebaseService: FirebaseService) { }
 
   ngOnInit() {
     this.GetLeagueInfo();
+  }
+
+  public AddLeague() {
+    this.firebaseService.AddLeagueId(this.LeagueId);
   }
 
   public ClickedRow(row) {
@@ -29,8 +36,8 @@ export class LeagueDetailsComponent implements OnInit {
   }
 
   private GetLeagueInfo(): void {
-    const leagueId = +this.route.snapshot.paramMap.get('id');
-    this.GetTeamsByLeagueId(leagueId);
+    this.LeagueId = +this.route.snapshot.paramMap.get('id');
+    this.GetTeamsByLeagueId(this.LeagueId);
   }
 
   private GetTeamsByLeagueId(leagueId: number) {
