@@ -16,3 +16,6 @@ button{
 .singleLine:hover button {
     visibility: visible;
 }
+#dashboard{
+    padding: 10px;
+}
