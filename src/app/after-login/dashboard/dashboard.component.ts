@@ -21,13 +21,13 @@ export class DashboardComponent implements OnInit {
 
   public DeleteLeague(event, league) {
     this.firebaseService.deleteLeague(league.league.key);
-    this.ObserveLeagues = this.ObserveLeagues.filter(x => x.leagueId !== league.leagueId);
+    this.ObserveLeagues = this.ObserveLeagues.filter(x => x.league.value !== league.league.value);
     event.stopPropagation();
   }
 
   public DeleteTeam(event, team) {
     this.firebaseService.deleteTeam(team.team.key);
-    this.ObserveTeams = this.ObserveTeams.filter(x => x._id !== team._id);
+    this.ObserveTeams = this.ObserveTeams.filter(x => x.team.value !== team.team.value);
     event.stopPropagation();
   }
 
