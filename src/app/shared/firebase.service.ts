@@ -5,8 +5,8 @@ import { AngularFireList, SnapshotAction } from 'angularfire2/database/interface
 
 @Injectable()
 export class FirebaseService {
-  private _teamsRef: AngularFireList;
-  private _leagueRef: AngularFireList;
+  private _teamsRef;
+  private _leagueRef;
 
   constructor(private _afAuth: AngularFireAuth, private _db: AngularFireDatabase) {
     this._afAuth.authState.subscribe(user => {
@@ -49,7 +49,7 @@ export class FirebaseService {
     return this.getDate(this._leagueRef);
   }
 
-  private getDate(ref: AngularFireList) {
+  private getDate(ref) {
     return ref.snapshotChanges().first()
       .map((arr: SnapshotAction[]) => {
         return arr.map(el => {
