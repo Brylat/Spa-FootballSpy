@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
-<div id="forms">
-
+<mat-card id="forms">
+  Pick two teams: <br>
   <div class="country">
     <mat-form-field>
       <mat-select placeholder="Choose country" [formControl]="Countries1" (ngModelChange)="ChangeSelectedCountry1($event)">
@@ -54,24 +54,24 @@
     </mat-form-field>
   </div>
   <div class=cb></div>
-</div>
+</mat-card>
   <hr>
   <div class="match" *ngFor="let match of MatchHistory">
     <div class="squere">
-        <b>Gospodarz:</b> {{ match.team_season_home_name }}
-      <br><br><b>Gole:</b> {{ match.number_goal_team_home }}
+        <b>Home team:</b> {{ match.team_season_home_name }}
+      <br><br><b>Goals:</b> {{ match.number_goal_team_home }}
     </div>
     <div class="squere">
-        <b>Data</b>: {{ match.schedule_date | date:'fullDate'}}
-      <br><b>Stadion:</b> {{ match.stadium }}
-      <br><b>Ilość widzow:</b> {{ match.spectators }}
-      <br><b>Sędzia:</b> {{ match.referee_name }}
-      <br><b>Rozpoczęcie:</b> {{ match.game_started_at | date:'shortTime'}}
-      <br><b>Zakończenie:</b> {{ match.game_ended_at | date:'shortTime'}}
+        <b>Date</b>: {{ match.schedule_date | date:'fullDate'}}
+      <br><b>Stadium:</b> {{ match.stadium }}
+      <br><b>Spectators:</b> {{ match.spectators }}
+      <br><b>Referee:</b> {{ match.referee_name }}
+      <br><b>Started:</b> {{ match.game_started_at | date:'shortTime'}}
+      <br><b>Ended:</b> {{ match.game_ended_at | date:'shortTime'}}
     </div>
     <div class="squere">
-        <b>Gość:</b> {{ match.team_season_away_name }}
-      <br><br><b>Gole:</b> {{ match.number_goal_team_away }}
+        <b>Away team:</b> {{ match.team_season_away_name }}
+      <br><br><b>Goals:</b> {{ match.number_goal_team_away }}
     </div>
     <div class=cb></div>
     <hr>
