@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 
-button{
+.singleLine button{
     visibility: hidden;
 }
 
