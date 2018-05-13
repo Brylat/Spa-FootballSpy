@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase';
+
 import { SnackBarService } from '../../shared/snack-bar.service';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -42,7 +43,7 @@ export class LoginComponent implements OnInit {
   }
 
   private _loginSuccess(): void {
-    this._sb.open('Zalogowano');
+    this._sb.open('Logged in');
     this._router.navigateByUrl('/').then();
   }
 

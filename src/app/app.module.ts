@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { environment } from '../environments/environment';
 import { AfterLoginModule } from './after-login/after-login.module';
@@ -17,14 +18,11 @@ import { LoadingBarInterceptorService } from './shared/loading-bar/loading-bar-i
 import { LoadingBarService } from './shared/loading-bar/loading-bar.service';
 import { MaterialModule } from './shared/material.module';
 import { SnackBarService } from './shared/snack-bar.service';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { TestComponent } from './test/test.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
   ],
   imports: [
     // ANGULAR AND MATERIAL MODULES
