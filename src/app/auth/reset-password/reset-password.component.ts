@@ -28,7 +28,7 @@ export class ResetPasswordComponent implements OnInit {
     this.buttonDisabled = true;
     this.afAuth.auth.sendPasswordResetEmail(this.formGroup.get('email').value)
       .then(() => {
-        this._sb.open('Na podany email został wysłany link resetujący hasło', { duration: 5000 });
+        this._sb.open('Account created', { duration: 5000 });
         this._location.back();
       })
       .catch(e => {

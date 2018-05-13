@@ -14,7 +14,7 @@ export class SnackBarService {
   };
 
   private _defaultAction = 'ok';
-  private _defaultWarnMessage = 'Wystąpił problem, proszę spróbować ponownie';
+  private _defaultWarnMessage = 'Problem occurred, please try again later';
 
   constructor(private _snackbar: MatSnackBar) {
   }

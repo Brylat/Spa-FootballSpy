@@ -3,6 +3,8 @@ import { FootballDataService } from '../../shared/football-data.service';
 import {FormControl } from '@angular/forms';
 import { Match } from '../../shared/objects-template/match';
 import { MatTableDataSource } from '@angular/material';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-upcoming-matches',
@@ -20,7 +22,10 @@ export class UpcomingMatchesComponent implements OnInit {
   public displayedColumns = ['schedule_date', 'stadium', 'team_season_home_name', 'team_season_away_name'];
 
 
-  constructor(private footballDataService: FootballDataService) { }
+  constructor(private footballDataService: FootballDataService,
+    private route: ActivatedRoute,
+    private location: Location,
+    private router: Router) { }
 
   public ChangeSelectedCountry(value) {
     this.footballDataService.GetLeaguesByCountryId(value._id).subscribe(data => {
@@ -36,8 +41,7 @@ export class UpcomingMatchesComponent implements OnInit {
     });
   }
   public ClickedRow(row) {
-    alert(row.id_team_season_away + ' ' + row.id_team_season_home);
-    // this.router.navigate(['/team/' + row.id_team_season]);
+    this.router.navigate(['/teamcompare'], {queryParams: {id1: row.id_team_season_away, id2: row.id_team_season_home}});
   }
   ngOnInit() {
     this.footballDataService.GetAllCountry().subscribe(data => {

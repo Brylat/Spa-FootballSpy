@@ -1,7 +1,7 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>
-      <h1>Logowanie</h1>
+      <h1>Log in</h1>
     </mat-card-title>
   </mat-card-header>
 
@@ -11,34 +11,34 @@
       <mat-form-field>
         <input matInput type="email" placeholder="Email" formControlName="email">
         <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required')">
-          Proszę podać poprawny adres email
+          Email is invalid
         </mat-error>
         <mat-error *ngIf="loginForm.get('email').hasError('required')">
-          Email jest <strong>wymagany</strong>
+          Email is <strong>required</strong>
         </mat-error>
       </mat-form-field>
 
       <mat-form-field>
-        <input matInput type="password" placeholder="Hasło" formControlName="password">
+        <input matInput type="password" placeholder="Password" formControlName="password">
         <mat-error *ngIf="loginForm.get('password').hasError('required')">
-          Hasło jest <strong>wymagane</strong>
+          Password is <strong>required</strong>
         </mat-error>
       </mat-form-field>
 
       <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid" (click)="login()">
-        Zaloguj się
+        Log in
       </button>
     </form>
 
     <button mat-raised-button color="primary" (click)="loginWithGoogleAccount()">
-      Zaloguj się za pomocą konta Google
+      Log in using Google
     </button>
 
-    <h3 class="text-or">lub</h3>
+    <h3 class="text-or">or</h3>
 
     <div fxLayout="row" id="buttons">
-      <button mat-button color="primary" routerLink="../reset-password">Reset hasła</button>
-      <button mat-button color="primary" routerLink="../signup">Zarejestruj się</button>
+      <button mat-button color="primary" routerLink="../reset-password">Password reset</button>
+      <button mat-button color="primary" routerLink="../signup">Register</button>
     </div>
 
   </mat-card-content>

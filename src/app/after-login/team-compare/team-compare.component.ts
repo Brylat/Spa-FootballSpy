@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FootballDataService } from '../../shared/football-data.service';
 import {FormControl } from '@angular/forms';
 import { Match } from '../../shared/objects-template/match';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-team-compare',
@@ -21,7 +22,14 @@ export class TeamCompareComponent implements OnInit {
   public League2 = new FormControl('');
   public Team1 = new FormControl('');
   public Team2 = new FormControl('');
-  constructor(private footballDataService: FootballDataService) { }
+  param1: number;
+  param2: number;
+  constructor(private footballDataService: FootballDataService, private route: ActivatedRoute) {
+    this.route.queryParams.subscribe(params => {
+      this.param1 = params['id1'];
+      this.param2 = params['id2'];
+    });
+  }
 
   public ChangeSelectedCountry1(value) {
     this.footballDataService.GetLeaguesByCountryId(value._id).subscribe(data => {
@@ -71,6 +79,9 @@ export class TeamCompareComponent implements OnInit {
     this.footballDataService.GetAllCountry().subscribe(data => {
       this.AllCountries = data.docs;
     });
+    if (this.param1) {
+      this.GetMatchHistory(this.param1, this.param2);
+    }
   }
 
 
