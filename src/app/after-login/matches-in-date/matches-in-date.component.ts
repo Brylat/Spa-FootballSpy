@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FootballDataService } from '../../shared/football-data.service';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-matches-in-date',
@@ -17,7 +19,10 @@ export class MatchesInDateComponent implements OnInit {
   pages: any;
   today = new Date();
 
-  constructor(private footballDataService: FootballDataService) { }
+  constructor(private footballDataService: FootballDataService,
+    private route: ActivatedRoute,
+    private location: Location,
+    private router: Router) { }
 
   ngOnInit() {
   }
@@ -56,5 +61,8 @@ export class MatchesInDateComponent implements OnInit {
     this.footballDataService.GetUpcomingByDate(this.dateFrom, new Date(this.dateTo.getTime() + 86400000), page).subscribe(data => {
       this.dataSource = data.docs;
     });
+  }
+  public ClickedRow(row) {
+    this.router.navigate(['/teamcompare'], {queryParams: {id1: row.id_team_season_away, id2: row.id_team_season_home}});
   }
 }
