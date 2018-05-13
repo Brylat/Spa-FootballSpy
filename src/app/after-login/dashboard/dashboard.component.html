@@ -1,17 +1,32 @@
 <div id="dashboard">
-<h2>Your observe Teams:</h2>
-
-<div class="singleLine" *ngFor="let team of ObserveTeams" routerLink="/team/{{team._id}}">
-    {{team.data.team_name}}
-    <button mat-button color="warn" (click)="DeleteTeam($event, team)">Del</button>
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>Your observe Teams</h2>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngIf="ObserveTeams.length < 1">
+            <button mat-button color="primary" routerLink="/leagues">Add</button>
+        </div>
+        <div class="singleLine" *ngFor="let team of ObserveTeams" routerLink="/team/{{team._id}}">
+            {{team.data.team_name}}
+            <button mat-button color="warn" (click)="DeleteTeam($event, team)">Del</button>
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>Your observe Leagues</h2>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngIf="ObserveLeagues.length < 1">
+            <button mat-button color="primary" routerLink="/leagues">Add</button>
+        </div>
+        <div class="singleLine" *ngFor="let league of ObserveLeagues" routerLink="/league/{{league.leagueId}}">
+            {{league.data.name}}
+            <button mat-button color="warn" (click)="DeleteLeague($event, league)">Del</button>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
 </div>
-
-
-<h2>Your observe Leagues:</h2>
-
-<div class="singleLine" *ngFor="let league of ObserveLeagues" routerLink="/league/{{league.leagueId}}">
-    {{league.data.name}}
-    <button mat-button color="warn" (click)="DeleteLeague($event, league)">Del</button>
-</div>
-</div>
-      
