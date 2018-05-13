@@ -1,0 +1,43 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="84072C04-D094-4531-8E75-1FDE28103527" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="5">
+    <control controlID="1CE3839F-9440-4408-867E-7C759AED7333" controlTypeID="Panel" x="364" y="96" w="300" h="221" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="F8632C0E-0A7E-4831-8999-06F7EB971263" controlTypeID="Label" x="25" y="31" w="126" h="24" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+          <text>Password+reset</text>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <textStyles>[fsBold]</textStyles>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="858C2B64-C3B9-4076-A139-EC95FA118A84" controlTypeID="TextInput" x="25" y="85" w="257" h="24" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Email</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="93AACEF9-71F2-45C7-B31C-693DA653E43E" controlTypeID="Button" x="25" y="129" w="257" h="28" zOrder="2">
+          <color>4284888012</color>
+          <borderColor>4284888012</borderColor>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Send</text>
+          <textColor>4294967295</textColor>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+          <radius>4</radius>
+        </control>
+        <control controlID="45678E79-94C1-42AD-9F8A-A2A0F9E4A136" controlTypeID="Border" x="0" y="0" w="300" h="221" zOrder="3">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

@@ -1,0 +1,56 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="6E56E62E-1407-494C-9B34-B330A8986647" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="7">
+    <control controlID="A0847EBD-957C-4521-808C-8FFAB9A16AB7" controlTypeID="Panel" x="104" y="143" w="917" h="236" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="F0E8BC68-C2A7-49EC-9678-B5C318F56C15" controlTypeID="Border" x="0" y="0" w="917" h="236" zOrder="0">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="08C811D8-5712-4E58-8540-545C029A0613" controlTypeID="Tab" x="104" y="143" w="917" h="236" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>Country1%2C+Country2%2C+Country3%2C+Country4</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+    </control>
+    <control controlID="F7F88CFE-7A63-4728-B28E-7EE66BB3389C" controlTypeID="Label" x="114" y="206" w="121" h="27" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>League+Name</text>
+      <textSize>20</textSize>
+      <lineSpacing>0</lineSpacing>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="97093533-D6D8-4344-851F-B49A7C27C27B" controlTypeID="Label" x="114" y="243" w="121" h="27" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>League+Name</text>
+      <textSize>20</textSize>
+      <lineSpacing>0</lineSpacing>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="1BD2FEFE-6412-42A6-A413-61D269B2A3A3" controlTypeID="Label" x="114" y="284" w="121" h="27" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>League+Name</text>
+      <textSize>20</textSize>
+      <lineSpacing>0</lineSpacing>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="95B6C6AA-543C-4111-8083-745B46725D12" controlTypeID="Label" x="114" y="321" w="121" h="27" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>League+Name</text>
+      <textSize>20</textSize>
+      <lineSpacing>0</lineSpacing>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

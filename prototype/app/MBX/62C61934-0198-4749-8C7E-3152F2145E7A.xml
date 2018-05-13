@@ -1,0 +1,726 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="62C61934-0198-4749-8C7E-3152F2145E7A" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="9">
+    <control controlID="86EAC51C-01EA-4046-A05D-ABA8267213B2" controlTypeID="Panel" x="93" y="93" w="914" h="313" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="DB6EAECE-2AB1-4E05-9BB6-465D61EC57B7" controlTypeID="Border" x="0" y="0" w="914" h="313" zOrder="0">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="48CA5547-6429-47FF-BA20-ECB95416C988" controlTypeID="Label" x="119" y="114" w="179" h="38" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>League+Name</text>
+      <textSize>28</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+    </control>
+    <control controlID="8C21B4BD-84FA-4EF3-B220-65B406B98501" controlTypeID="IconButton2" x="314" y="114" w="38" h="38" zOrder="2">
+      <groupChildrenDescriptors>
+        <control controlID="93C36B0A-5E5F-4247-BCE1-450E0A57119B" controlTypeID="Shape" x="0" y="0" w="38" h="38" zOrder="0">
+          <canMove>False</canMove>
+          <alias>shape</alias>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <textSize>14</textSize>
+          <shapeBorderType>SbEllipse</shapeBorderType>
+        </control>
+        <control controlID="182F9804-6AD9-4C48-96F3-74FFEF3AFDB5" controlTypeID="Icon" x="7" y="7" w="24" h="24" zOrder="1">
+          <canMove>False</canMove>
+          <alias>icon</alias>
+          <icon>
+            <ID/>
+            <iconFontName>jdIonicons</iconFontName>
+            <iconCode>62297</iconCode>
+          </icon>
+          <URL>A74ACDBBC3EE487C9CDF84F8F9700C7C.svg</URL>
+        </control>
+        <control controlID="613729DB-BEA8-4689-8E76-602A18613C45" controlTypeID="Label" x="0" y="2" w="27" h="16" zOrder="2">
+          <canMove>False</canMove>
+          <alias>label</alias>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Label</text>
+          <textSize>12</textSize>
+          <textAlign>HaCenter</textAlign>
+          <lineSpacing>0</lineSpacing>
+        </control>
+        <control controlID="E56ADB8B-41CC-4E02-93EA-1F133AA866F9" controlTypeID="Shape" x="25" y="0" w="13" h="13" zOrder="3">
+          <color>4294901760</color>
+          <borderVisible>False</borderVisible>
+          <canMove>False</canMove>
+          <alias>alarm</alias>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>2</text>
+          <textColor>4294967295</textColor>
+          <textSize>8</textSize>
+          <radius>100</radius>
+          <radiusIsPercent>True</radiusIsPercent>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="CB8608DF-042F-4BFE-86F0-BEFEC1A3089B" controlTypeID="Table" x="93" y="196" w="914" h="210" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>No.%09Name%09Matchs%09Win%09Draw%09Lose%09Points%091%09Team+name%09number%09number%09number%09number%09number%092%09Team+name%09number%09number%09number%09number%09number%093%09Team+name%09number%09number%09number%09number%09number%094%09Team+name%09number%09number%09number%09number%09number%095%09Team+name%09number%09number%09number%09number%09number%096%09Team+name%09number%09number%09number%09number%09number</text>
+      <textSize>14</textSize>
+      <textAlign>HaCenter</textAlign>
+      <lineSpacing>0</lineSpacing>
+      <thickness>1</thickness>
+      <dashMode>SdSolid</dashMode>
+      <tableStyle>tsNone</tableStyle>
+      <fontFamily/>
+      <fontWeight/>
+      <textStyles>[]</textStyles>
+      <cells>
+        <cell rows="0,0" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>No.</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="0,0" cols="1,1">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="0,0" cols="2,2">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Matchs</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="0,0" cols="3,3">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Win</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="0,0" cols="4,4">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Draw</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="0,0" cols="5,5">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Lose</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="0,0" cols="6,6">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Points</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>1</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="1,1">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Team+name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="2,2">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="3,3">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="4,4">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="5,5">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="1,1" cols="6,6">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>2</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="1,1">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Team+name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="2,2">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="3,3">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="4,4">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="5,5">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="2,2" cols="6,6">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>3</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="1,1">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Team+name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="2,2">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="3,3">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="4,4">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="5,5">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="3,3" cols="6,6">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>4</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="1,1">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Team+name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="2,2">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="3,3">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="4,4">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="5,5">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="4,4" cols="6,6">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>5</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="1,1">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Team+name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="2,2">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="3,3">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="4,4">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="5,5">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="5,5" cols="6,6">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="0,0">
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>6</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="1,1">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>Team+name</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="2,2">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="3,3">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="4,4">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="5,5">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+        <cell rows="6,6" cols="6,6">
+          <fontSize>12</fontSize>
+          <textHAlign>HaCenter</textHAlign>
+          <textVAlign>VaMiddle</textVAlign>
+          <textColor>4278190080</textColor>
+          <textWordWrap>True</textWordWrap>
+          <fontFamily>Segoe+UI</fontFamily>
+          <fontWeight>Normalny</fontWeight>
+          <textStyles>[]</textStyles>
+          <text>number</text>
+          <textHeight>28</textHeight>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+        </cell>
+      </cells>
+      <rows>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+        <row height="30">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+          <isAutoRowHeight>True</isAutoRowHeight>
+        </row>
+      </rows>
+      <cols>
+        <col width="128">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+        <col width="131">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+        <col width="130">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+        <col width="131">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+        <col width="131">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+        <col width="130">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+        <col width="133">
+          <fontFamily/>
+          <fontWeight/>
+          <textStyles>[]</textStyles>
+        </col>
+      </cols>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

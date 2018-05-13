@@ -1,0 +1,44 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="914FE13A-C41D-4B55-B53F-B247862C3745" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="6">
+    <control controlID="103DE5ED-9F86-4B83-9140-9990E7D407F2" controlTypeID="Panel" x="58" y="150" w="983" h="309" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="A0178E20-7B33-4842-8BB3-24BCC999527C" controlTypeID="Border" x="0" y="0" w="983" h="309" zOrder="0">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="C55F6EDB-10F9-4AC3-BE39-DE6E027A9285" controlTypeID="Tab" x="58" y="150" w="983" h="309" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>By+Date%2C+By+League</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+    </control>
+    <control controlID="A556E6F0-62D6-4544-8466-DAF731D14BCD" controlTypeID="Label" x="401" y="216" w="261" h="19" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>Enter+data+to+search+matches+in+these+data+</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="CD15977B-7B40-40C8-8DB2-6D32AC293D39" controlTypeID="DateTimePicker" x="308" y="272" w="202" h="24" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>03+%2F+10+%2F+2014</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="AEE7CA38-C43A-4A75-B2CD-0A0D231BE7F1" controlTypeID="DateTimePicker" x="530" y="272" w="202" h="24" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>03+%2F+10+%2F+2014</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

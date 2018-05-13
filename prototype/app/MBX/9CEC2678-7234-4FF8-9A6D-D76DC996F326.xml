@@ -1,0 +1,94 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="9CEC2678-7234-4FF8-9A6D-D76DC996F326" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="12">
+    <control controlID="FCCDD91A-C3F8-46B5-B5A6-B3C25C2E16DB" controlTypeID="Panel" x="40" y="0" w="1033" h="529" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="D038D94F-CD11-493B-B3DF-9B8A1DE54AB3" controlTypeID="Image" x="-823" y="0" w="100" h="100" zOrder="0">
+          <URL>4CA12DB9DC72196B246B130E27929F27.png</URL>
+        </control>
+        <control controlID="C215E58D-2E13-4B58-A266-B4E374C4DBDE" controlTypeID="Button" x="0" y="212" w="1035" h="59" zOrder="1">
+          <color>4284888012</color>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+          <radius>4</radius>
+        </control>
+        <control controlID="9FE9B34B-1BBD-454D-8336-7791C5A43F71" controlTypeID="Label" x="20" y="228" w="85" h="24" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Dashboard</text>
+          <textColor>4294967295</textColor>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="2EF259B5-6C89-4982-8CA4-1F5FBD77E46C" controlTypeID="Label" x="131" y="228" w="64" h="24" zOrder="3">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Leagues</text>
+          <textColor>4294967295</textColor>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="69284343-F3E8-44AD-B3A0-D679C3917C03" controlTypeID="Label" x="226" y="228" w="126" h="24" zOrder="4">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Teams+Compare</text>
+          <textColor>4294967295</textColor>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="8A2E9289-E807-45F1-85F3-91EC2501D322" controlTypeID="Label" x="380" y="228" w="81" h="24" zOrder="5">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Upcoming</text>
+          <textColor>4294967295</textColor>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="F83A0519-1C4C-4873-AAD3-F7336BE5F692" controlTypeID="Label" x="502" y="228" w="61" h="24" zOrder="6">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Log+out</text>
+          <textColor>4294967295</textColor>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="54BAF9EE-43A9-4F43-BE5B-CF5C4D88464F" controlTypeID="Border" x="0" y="0" w="1033" h="529" zOrder="7">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="C1D7C68B-0A1A-4987-8032-FA86658FD19C" controlTypeID="Image" x="40" y="0" w="1033" h="214" zOrder="1">
+      <URL>1E1CC27904E0616146E909F649C8094A.jpg</URL>
+    </control>
+    <control controlID="5EB00543-16BA-473A-AC38-86A3F504BC25" controlTypeID="Label" x="434" y="80" w="223" h="54" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>FootballSpy</text>
+      <textSize>40</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="F96F27AD-0C36-4A9D-AC26-9F79BDF7B1FB" controlTypeID="Label" x="277" y="368" w="497" h="43" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI+Kursywa" postScript="" weightStyle="Kursywa" weight="400" isBold="False" isItalic="True"/>
+      <text>Main+content%2C+prototype+in+subtree</text>
+      <textSize>32</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsItalic,fsUnderline]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

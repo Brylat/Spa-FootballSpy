@@ -1,0 +1,84 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="CE2BB022-B5B4-4593-99A6-8B057EB16672" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="11">
+    <control controlID="8BE4DEB6-6DBC-40BA-BAB5-6CAFF89498B0" controlTypeID="Panel" x="60" y="108" w="958" h="392" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="428E7D7D-0F97-41A9-886D-AE7FAFC00978" controlTypeID="Border" x="0" y="0" w="958" h="392" zOrder="0">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="A06908DE-6969-4750-8128-C633B933159F" controlTypeID="IconButton2" x="99" y="140" w="38" h="38" zOrder="1">
+      <groupChildrenDescriptors>
+        <control controlID="439E20F4-AF4B-452C-9CE2-A259D0D2A70F" controlTypeID="Shape" x="0" y="0" w="38" h="38" zOrder="0">
+          <canMove>False</canMove>
+          <alias>shape</alias>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <textSize>14</textSize>
+          <shapeBorderType>SbEllipse</shapeBorderType>
+        </control>
+        <control controlID="EC16919B-0491-4AEE-8550-0FC41F2E0539" controlTypeID="Icon" x="7" y="7" w="24" h="24" zOrder="1">
+          <canMove>False</canMove>
+          <alias>icon</alias>
+          <icon>
+            <ID/>
+            <iconFontName>jdIonicons</iconFontName>
+            <iconCode>62297</iconCode>
+          </icon>
+          <URL>A74ACDBBC3EE487C9CDF84F8F9700C7C.svg</URL>
+        </control>
+        <control controlID="B51D30C3-612A-4456-A969-E3E90D502A84" controlTypeID="Label" x="0" y="2" w="27" h="16" zOrder="2">
+          <canMove>False</canMove>
+          <alias>label</alias>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Label</text>
+          <textSize>12</textSize>
+          <textAlign>HaCenter</textAlign>
+          <lineSpacing>0</lineSpacing>
+        </control>
+        <control controlID="E1341854-6A11-4D87-A193-96FA4FAAA080" controlTypeID="Shape" x="25" y="0" w="13" h="13" zOrder="3">
+          <color>4294901760</color>
+          <borderVisible>False</borderVisible>
+          <canMove>False</canMove>
+          <alias>alarm</alias>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>2</text>
+          <textColor>4294967295</textColor>
+          <textSize>8</textSize>
+          <radius>100</radius>
+          <radiusIsPercent>True</radiusIsPercent>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="387B1C15-819B-4630-9BE0-E378A44FF380" controlTypeID="Label" x="84" y="206" w="201" h="24" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>**Team+and+season+info**</text>
+      <textSize>18</textSize>
+      <lineSpacing>0</lineSpacing>
+      <useDefaultTextSize>False</useDefaultTextSize>
+    </control>
+    <control controlID="D0C17562-8218-4C23-9D87-17BEC2F59376" controlTypeID="PieChartEx" x="132" y="292" w="190" h="190" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>25%2Cred%0D%0A25%2Cgreen%0D%0A30%2Cyellow</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+    </control>
+    <control controlID="C863DC59-5DA7-48FF-B852-E3D62C768F81" controlTypeID="Label" x="112" y="263" w="210" h="19" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>Pie+about+win%2Flose%2Fdraw+in+season</text>
+      <lineSpacing>0</lineSpacing>
+    </control>
+    <control controlID="452AA6D3-ED47-4EE0-B0E7-3182A5E7494E" controlTypeID="Accordion" x="514" y="150" w="482" h="290" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+      <text>Players%0D%0AShort+data%0D%0ADetailed+stats</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

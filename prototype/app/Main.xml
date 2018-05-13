@@ -1,0 +1,45 @@
+﻿<project version="2.9" name="Project" ID="C1C4DA23-3072-42DD-957A-41E41D4899D2">
+  <params>
+    <pageParam version="5.2" minAllowVersion="5.2"/>
+    <projectParam version="2.9" minAllowVersion="2.9" platform="MtWeb" pageSize="(1100,6000)" backgroundColor="4294967295" fontSize="0" fontFamily="" projectType="ptPersonalProject" isShowTitleIndex="False"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="PasswordReset" ID="66669AB3-8BBD-4589-B427-58723173743C" expanded="True" code="7RQiggM5GN" thumbCode="7RQiggM5GN" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="Login" ID="2E4F3A1D-E208-4F69-B0C5-55D19AD649C6" expanded="False" code="ap4iuWyRJ8" thumbCode="ap4iuWyRJ8" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="PasswordReset" ID="84072C04-D094-4531-8E75-1FDE28103527" expanded="True" code="PUpUyr3AX5" thumbCode="PUpUyr3AX5" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="Register" ID="043E6C1A-CC8C-46BA-A0E4-75C4C73D5DF7" expanded="False" code="OTGa3A1uCy" thumbCode="aFrMJL3Qfq" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="MainView" ID="9CEC2678-7234-4FF8-9A6D-D76DC996F326" expanded="True" code="vinwOFtogT" thumbCode="kWDHhaAUtA" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="4CA12DB9DC72196B246B130E27929F27.png"/>
+        <image key="1E1CC27904E0616146E909F649C8094A.jpg"/>
+      </images>
+      <page name="Dashboard" ID="0EAA04BA-FE66-440E-B988-515E54053AE2" expanded="True" code="vRu9SwM2dT" thumbCode="vRu9SwM2dT" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="Leagues" ID="6E56E62E-1407-494C-9B34-B330A8986647" expanded="False" code="9AYUVpOsys" thumbCode="IKOzYxECjB" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="LeagueDetail" ID="62C61934-0198-4749-8C7E-3152F2145E7A" expanded="True" code="KnD2nd3uKW" thumbCode="KnD2nd3uKW" status="psWhite" isfolder="False" isshownode="True">
+        <images>
+          <image key="A74ACDBBC3EE487C9CDF84F8F9700C7C.svg"/>
+        </images>
+      </page>
+      <page name="TeamDetails" ID="CE2BB022-B5B4-4593-99A6-8B057EB16672" expanded="False" code="1H2JUekAH7" thumbCode="klG8PY2WMZ" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+        <images>
+          <image key="A74ACDBBC3EE487C9CDF84F8F9700C7C.svg"/>
+        </images>
+      </page>
+      <page name="TeamsCompare" ID="E253BBE1-478E-4AC1-AF9A-4413C6607D48" expanded="True" code="TOfzkKSVg4" thumbCode="TOfzkKSVg4" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="TeamsCompareAfter" ID="CE617269-8F8F-4EE4-8D4C-5359702B7041" expanded="False" code="cbLwWI6ejj" thumbCode="QW1PtwL1XP" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="UpcomingByLeague" ID="889A624A-F643-427A-B879-6F071ECDAA8D" expanded="False" code="Fo72CGdpuM" thumbCode="Fo72CGdpuM" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="UpcomingDate" ID="914FE13A-C41D-4B55-B53F-B247862C3745" expanded="True" code="L1Dw6yuzz2" thumbCode="L1Dw6yuzz2" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="Upcoming After" ID="DC25A916-2345-4823-BD1E-A5876D72D6C9" expanded="True" code="sRVXFFcqIa" thumbCode="sRVXFFcqIa" status="psWhite" isfolder="False" isshownode="True"/>
+    </page>
+  </pages>
+  <trash/>
+  <deletes/>
+  <masters/>
+  <images>
+    <image key="4CA12DB9DC72196B246B130E27929F27.png"/>
+    <image key="1E1CC27904E0616146E909F649C8094A.jpg"/>
+    <image key="A74ACDBBC3EE487C9CDF84F8F9700C7C.svg"/>
+  </images>
+</project>

@@ -1,0 +1,312 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="CE617269-8F8F-4EE4-8D4C-5359702B7041" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="43">
+    <control controlID="65338DB4-8FA2-403D-967A-F12ED9F7202F" controlTypeID="Panel" x="55" y="174" w="858" h="755" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="B56DF6F4-407A-48E3-B8BA-C120E39B42A6" controlTypeID="CompositeComboBox" x="174" y="75" w="200" h="24" zOrder="0">
+          <groupChildrenDescriptors>
+            <control controlID="03EE5DF9-715F-4240-9BC7-6C0256DA44FE" controlTypeID="TextInput" x="0" y="0" w="177" h="24" zOrder="0">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>input</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+country</text>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="108727C5-14AB-4C06-99A7-E82BC52BD2EA" controlTypeID="Button" x="176" y="0" w="24" h="24" zOrder="1">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>button</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>0</radius>
+            </control>
+            <control controlID="6A9E443A-4323-40D4-982E-5B724B8AB4EA" controlTypeID="List" x="0" y="24" w="200" h="26" zOrder="2">
+              <isShow>False</isShow>
+              <canMove>False</canMove>
+              <alias>dropDown</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+country</text>
+              <textSize>14</textSize>
+              <lineSpacing>0</lineSpacing>
+              <itemHeight>24</itemHeight>
+              <interlaceColor>4294967295</interlaceColor>
+            </control>
+          </groupChildrenDescriptors>
+          <baseHeight>24</baseHeight>
+          <font family="Segoe+UI"/>
+          <textSize>14</textSize>
+        </control>
+        <control controlID="5405ECAA-5962-4B6F-96F8-C8CA2D6E38F7" controlTypeID="CompositeComboBox" x="174" y="135" w="200" h="24" zOrder="1">
+          <groupChildrenDescriptors>
+            <control controlID="62CF8FF4-89FD-428F-B843-B7234EE4A0EC" controlTypeID="TextInput" x="0" y="0" w="177" h="24" zOrder="0">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>input</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+League</text>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="4E55418C-1ACC-41DC-B6DB-E32C25786060" controlTypeID="Button" x="176" y="0" w="24" h="24" zOrder="1">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>button</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>0</radius>
+            </control>
+            <control controlID="37EB7937-20EF-48F5-BA2C-AD9AC648049D" controlTypeID="List" x="0" y="24" w="200" h="26" zOrder="2">
+              <isShow>False</isShow>
+              <canMove>False</canMove>
+              <alias>dropDown</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+League</text>
+              <textSize>14</textSize>
+              <lineSpacing>0</lineSpacing>
+              <itemHeight>24</itemHeight>
+              <interlaceColor>4294967295</interlaceColor>
+            </control>
+          </groupChildrenDescriptors>
+          <baseHeight>24</baseHeight>
+          <font family="Segoe+UI"/>
+          <textSize>14</textSize>
+        </control>
+        <control controlID="BB3D3CE8-E671-4F02-AD60-70B557E1974D" controlTypeID="CompositeComboBox" x="174" y="189" w="200" h="24" zOrder="2">
+          <groupChildrenDescriptors>
+            <control controlID="A68A434C-CC94-44DD-81C1-F8285F8F88AC" controlTypeID="TextInput" x="0" y="0" w="177" h="24" zOrder="0">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>input</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+Team</text>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="E3B6F337-57F1-46AE-8C16-B0B57F8CECB6" controlTypeID="Button" x="176" y="0" w="24" h="24" zOrder="1">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>button</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>0</radius>
+            </control>
+            <control controlID="7F7EE01E-64E6-4E0E-BEC8-31384F540362" controlTypeID="List" x="0" y="24" w="200" h="26" zOrder="2">
+              <isShow>False</isShow>
+              <canMove>False</canMove>
+              <alias>dropDown</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+Team</text>
+              <textSize>14</textSize>
+              <lineSpacing>0</lineSpacing>
+              <itemHeight>24</itemHeight>
+              <interlaceColor>4294967295</interlaceColor>
+            </control>
+          </groupChildrenDescriptors>
+          <baseHeight>24</baseHeight>
+          <font family="Segoe+UI"/>
+          <textSize>14</textSize>
+        </control>
+        <control controlID="301C13FA-0ADA-45EB-BF0E-0B43B30F9083" controlTypeID="CompositeComboBox" x="439" y="75" w="200" h="24" zOrder="3">
+          <groupChildrenDescriptors>
+            <control controlID="89301F91-1579-428E-BE94-842EB7432873" controlTypeID="TextInput" x="0" y="0" w="177" h="24" zOrder="0">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>input</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+country</text>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="628F1B15-108C-4A23-8D6B-458D64D5E2D1" controlTypeID="Button" x="176" y="0" w="24" h="24" zOrder="1">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>button</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>0</radius>
+            </control>
+            <control controlID="8B4AF613-5C88-4614-BAE2-3D6CDFFA53B0" controlTypeID="List" x="0" y="24" w="200" h="26" zOrder="2">
+              <isShow>False</isShow>
+              <canMove>False</canMove>
+              <alias>dropDown</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+country</text>
+              <textSize>14</textSize>
+              <lineSpacing>0</lineSpacing>
+              <itemHeight>24</itemHeight>
+              <interlaceColor>4294967295</interlaceColor>
+            </control>
+          </groupChildrenDescriptors>
+          <baseHeight>24</baseHeight>
+          <font family="Segoe+UI"/>
+          <textSize>14</textSize>
+        </control>
+        <control controlID="89A7778F-8CAD-4356-B1AD-FA2EF6D8A069" controlTypeID="CompositeComboBox" x="439" y="135" w="200" h="24" zOrder="4">
+          <groupChildrenDescriptors>
+            <control controlID="CE6CE888-6E22-44DE-9BE0-CE1E5374DB74" controlTypeID="TextInput" x="0" y="0" w="177" h="24" zOrder="0">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>input</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+League</text>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="6B2BC510-6E3A-4D30-90DD-338B8A2CD954" controlTypeID="Button" x="176" y="0" w="24" h="24" zOrder="1">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>button</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>0</radius>
+            </control>
+            <control controlID="B11C83B8-EAEB-4583-BBCC-F32AD813EF1D" controlTypeID="List" x="0" y="24" w="200" h="26" zOrder="2">
+              <isShow>False</isShow>
+              <canMove>False</canMove>
+              <alias>dropDown</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+League</text>
+              <textSize>14</textSize>
+              <lineSpacing>0</lineSpacing>
+              <itemHeight>24</itemHeight>
+              <interlaceColor>4294967295</interlaceColor>
+            </control>
+          </groupChildrenDescriptors>
+          <baseHeight>24</baseHeight>
+          <font family="Segoe+UI"/>
+          <textSize>14</textSize>
+        </control>
+        <control controlID="9F706B7B-37E6-4668-9D99-E0F0539ED388" controlTypeID="CompositeComboBox" x="439" y="189" w="200" h="24" zOrder="5">
+          <groupChildrenDescriptors>
+            <control controlID="9CB5C1E2-0ECD-4A5C-A267-D55D327BA5B8" controlTypeID="TextInput" x="0" y="0" w="177" h="24" zOrder="0">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>input</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+Team</text>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="4D630038-2A31-46A1-B9FC-058780B0A3B8" controlTypeID="Button" x="176" y="0" w="24" h="24" zOrder="1">
+              <locked>True</locked>
+              <canMove>False</canMove>
+              <alias>button</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <lineSpacing>0</lineSpacing>
+              <selectedIndex>-1</selectedIndex>
+              <radius>0</radius>
+            </control>
+            <control controlID="09524A58-5A4F-4B6B-9BAA-AA768B95528E" controlTypeID="List" x="0" y="24" w="200" h="26" zOrder="2">
+              <isShow>False</isShow>
+              <canMove>False</canMove>
+              <alias>dropDown</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+              <text>Choose+Team</text>
+              <textSize>14</textSize>
+              <lineSpacing>0</lineSpacing>
+              <itemHeight>24</itemHeight>
+              <interlaceColor>4294967295</interlaceColor>
+            </control>
+          </groupChildrenDescriptors>
+          <baseHeight>24</baseHeight>
+          <font family="Segoe+UI"/>
+          <textSize>14</textSize>
+        </control>
+        <control controlID="137CCC17-9207-49C8-B812-6692179AD63F" controlTypeID="Label" x="361" y="32" w="122" h="24" zOrder="6">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Pick+two+teams%3A</text>
+          <textSize>18</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="58ECF345-4745-4722-868C-933A47B38E56" controlTypeID="Border" x="0" y="0" w="858" h="755" zOrder="7">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="A16803FA-32B0-4CD7-8CB7-261DC9FA05ED" controlTypeID="HRule" x="55" y="431" w="858" h="12" zOrder="1"/>
+    <control controlID="6EE4473E-B591-490A-81D1-9A85768435AB" controlTypeID="Panel" x="55" y="443" w="858" h="169" zOrder="2">
+      <groupChildrenDescriptors>
+        <control controlID="12DDA907-0C93-4334-A2CC-735520FAD2F1" controlTypeID="TextArea" x="25" y="24" w="240" h="74" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Home+team%3A+Manchester+City+%0D%0A%0D%0AGoals%3A+1</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="085DB129-DACF-4884-AB24-0E0D887425BC" controlTypeID="TextArea" x="285" y="24" w="240" h="145" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Date%3A+Tuesday%2C+April+10%2C+2018+%0D%0AStadium%3A+Etihad+Stadium+%0D%0ASpectators%3A+%0D%0AReferee%3A+Antonio+Mateu+%0D%0AStarted%3A+8%3A45+PM+%0D%0AEnded%3A+10%3A33+PM</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="E447A505-122F-4AD0-9EF2-3273347CFA7E" controlTypeID="TextArea" x="570" y="24" w="240" h="74" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Away+team%3A+Liverpool+%0D%0A%0D%0AGoals%3A+2</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="66D97EBC-65C4-4688-932E-6A483138C2A3" controlTypeID="Border" x="0" y="0" w="858" h="169" zOrder="3">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="F71E57D2-6276-4CE6-9503-86EDCEA052B5" controlTypeID="Panel" x="55" y="611" w="858" h="169" zOrder="3">
+      <groupChildrenDescriptors>
+        <control controlID="3ED4D811-82C0-49C3-BC52-5D539DB1E4B4" controlTypeID="TextArea" x="25" y="24" w="240" h="74" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Home+team%3A+Manchester+City+%0D%0A%0D%0AGoals%3A+1</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="1B0464BD-90CC-4CC3-9DC9-EAA23459EAD3" controlTypeID="TextArea" x="285" y="24" w="240" h="145" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Date%3A+Tuesday%2C+April+10%2C+2018+%0D%0AStadium%3A+Etihad+Stadium+%0D%0ASpectators%3A+%0D%0AReferee%3A+Antonio+Mateu+%0D%0AStarted%3A+8%3A45+PM+%0D%0AEnded%3A+10%3A33+PM</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="1BF15267-4276-4E5D-BDBC-B84026AC5118" controlTypeID="TextArea" x="570" y="24" w="240" h="74" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Away+team%3A+Liverpool+%0D%0A%0D%0AGoals%3A+2</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="04714819-B461-49F1-B98B-275374A231A8" controlTypeID="Border" x="0" y="0" w="858" h="169" zOrder="3">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="E4B52B86-857E-4CAE-8576-803539A8B096" controlTypeID="Panel" x="55" y="780" w="858" h="156" zOrder="4">
+      <groupChildrenDescriptors>
+        <control controlID="0E913073-E375-44F9-8EB2-7B609D3DCF1B" controlTypeID="TextArea" x="25" y="24" w="240" h="74" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Home+team%3A+Manchester+City+%0D%0A%0D%0AGoals%3A+1</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="66D42A66-E692-4D29-A06D-F12A6460EA7E" controlTypeID="TextArea" x="285" y="24" w="240" h="124" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Date%3A+Tuesday%2C+April+10%2C+2018+%0D%0AStadium%3A+Etihad+Stadium+%0D%0ASpectators%3A+%0D%0AReferee%3A+Antonio+Mateu+%0D%0AStarted%3A+8%3A45+PM+%0D%0AEnded%3A+10%3A33+PM</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="DCB7A54A-23AD-4D19-A571-E9004A621F1A" controlTypeID="TextArea" x="570" y="24" w="240" h="74" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Away+team%3A+Liverpool+%0D%0A%0D%0AGoals%3A+2</text>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="6569319E-3491-4A5D-9989-E76704B58AE3" controlTypeID="Border" x="0" y="0" w="858" h="156" zOrder="3">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

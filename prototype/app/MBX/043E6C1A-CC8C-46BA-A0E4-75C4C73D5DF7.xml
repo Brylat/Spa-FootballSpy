@@ -1,0 +1,77 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="043E6C1A-CC8C-46BA-A0E4-75C4C73D5DF7" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="10">
+    <control controlID="EDD3D578-E1D1-40FE-A481-81FDCCBCE77E" controlTypeID="Panel" x="346" y="37" w="300" h="400" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="F9241DE6-0457-44B4-A052-64DFD2502EC0" controlTypeID="TextArea" x="21" y="25" w="240" h="74" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+          <text>Register</text>
+          <textStyles>[fsBold]</textStyles>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="CC6E9560-FFCB-4FAB-9A9C-19165D047965" controlTypeID="TextInput" x="21" y="87" w="250" h="24" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Email</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="6AD0C1EE-F51D-46C0-9121-69F4433A1360" controlTypeID="TextInput" x="21" y="130" w="250" h="23" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Password</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="177BCB79-DD11-4C51-98BE-338635E57168" controlTypeID="TextInput" x="21" y="169" w="250" h="23" zOrder="3">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Repeat+password</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="4B69CDC7-B132-4F13-A57F-0A8D49C908B6" controlTypeID="Button" x="21" y="200" w="250" h="28" zOrder="4">
+          <color>4284888012</color>
+          <borderColor>4284888012</borderColor>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Register</text>
+          <textColor>4294967295</textColor>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+          <radius>4</radius>
+        </control>
+        <control controlID="4840FDD0-A2D5-4943-B801-5762D1E6A79F" controlTypeID="Button" x="21" y="238" w="250" h="28" zOrder="5">
+          <color>4284888012</color>
+          <borderColor>4284888012</borderColor>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Register+using+Google</text>
+          <textColor>4294967295</textColor>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+          <radius>4</radius>
+        </control>
+        <control controlID="ECD69635-CB5C-4FE9-B9A1-56B576B7C2C8" controlTypeID="Label" x="139" y="283" w="13" h="19" zOrder="6">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>or</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="721E8550-AB71-43C5-9ECC-EBC6BA94FC66" controlTypeID="Label" x="124" y="312" w="43" h="22" zOrder="7">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Log+in</text>
+          <textColor>4284888012</textColor>
+          <textSize>16</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="4B6FF24E-4D1C-4010-93E3-31AB81AFE1ED" controlTypeID="Border" x="0" y="0" w="300" h="400" zOrder="8">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

@@ -1,0 +1,56 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="66669AB3-8BBD-4589-B427-58723173743C" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="7">
+    <control controlID="E1E375E7-714F-4555-AAFA-DC33E752C317" controlTypeID="Panel" x="358" y="64" w="300" h="248" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="8CF8C3F9-C457-4417-BC25-3B31AA4795C8" controlTypeID="Label" x="20" y="16" w="192" h="27" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+          <text>Reset+your+password</text>
+          <textSize>20</textSize>
+          <lineSpacing>0</lineSpacing>
+          <textStyles>[fsBold]</textStyles>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="97738DE8-BE30-43FF-918D-7C0693A3EC01" controlTypeID="Label" x="20" y="79" w="17" h="19" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>for</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="67F80762-50B9-492F-B252-67AFEDE87935" controlTypeID="Label" x="47" y="78" w="94" h="19" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+          <text>Mail@mail.ma</text>
+          <lineSpacing>0</lineSpacing>
+          <textStyles>[fsBold]</textStyles>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="FC213041-A990-4504-9DE3-19DF7DFDFC18" controlTypeID="TextInput" x="20" y="121" w="250" h="23" zOrder="3">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>New+password</text>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="9605B5AF-7F18-47B5-910B-16F33BB5A012" controlTypeID="Button" x="176" y="175" w="94" h="28" zOrder="4">
+          <color>4284888012</color>
+          <borderColor>4284888012</borderColor>
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Save</text>
+          <textColor>4294967295</textColor>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+          <radius>4</radius>
+        </control>
+        <control controlID="07574E8C-25D3-4F92-8889-89751CE6F0FE" controlTypeID="Border" x="0" y="0" w="300" h="248" zOrder="5">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

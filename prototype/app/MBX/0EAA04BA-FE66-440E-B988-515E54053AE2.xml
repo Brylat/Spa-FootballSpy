@@ -1,0 +1,48 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="0EAA04BA-FE66-440E-B988-515E54053AE2" platform="MtWeb" defaultW="1100" defaultH="6000" measureW="1100" measureH="6000" mobileScreenScale="0">
+  <controls controlCount="6">
+    <control controlID="28E1A6BF-99D3-493C-B473-A2FB3AA6A7C7" controlTypeID="Panel" x="146" y="172" w="899" h="180" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="D26FCD02-412B-419B-BE53-B93F0D10480C" controlTypeID="Accordion" x="0" y="0" w="899" h="177" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+          <text>Your+observe+Teams%0D%0AYour+observe+Leagues+%0D%0A-+Sub-Item2.1%0D%0A-+Sub-Item2.2%0D%0A</text>
+          <textSize>14</textSize>
+          <lineSpacing>0</lineSpacing>
+          <textStyles>[fsBold]</textStyles>
+        </control>
+        <control controlID="D30B150C-0E7D-4D97-9213-29BDD6FC5941" controlTypeID="Label" x="10" y="39" w="114" h="22" zOrder="1">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Manchaster+City</text>
+          <textSize>16</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+        </control>
+        <control controlID="99463A8E-34D2-4935-8E90-D5661545C4A1" controlTypeID="Label" x="10" y="71" w="114" h="22" zOrder="2">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Manchaster+City</text>
+          <textSize>16</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="1D727690-7E07-42A8-8ED9-78C99CAB23D7" controlTypeID="Label" x="10" y="103" w="114" h="22" zOrder="3">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normalny" weight="400" isBold="False" isItalic="False"/>
+          <text>Manchaster+City</text>
+          <textSize>16</textSize>
+          <lineSpacing>0</lineSpacing>
+          <useDefaultTextSize>False</useDefaultTextSize>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+        <control controlID="6B855649-B6D0-4B7A-B70A-47E82CC2ECDD" controlTypeID="Border" x="0" y="0" w="899" h="180" zOrder="4">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>
